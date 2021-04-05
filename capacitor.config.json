@@ -1,0 +1,13 @@
+{
+  "appId": "test.voya2.com",
+  "appName": "voyatest2",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

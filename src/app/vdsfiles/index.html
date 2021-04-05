@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Voya Design System</title>
+    
+            <script src="./v-polyfills.js"></script>
+            <script src="./v-theme-component.js"></script>
+            <script src="doc-bundle.js"></script>
+            <script src="./v-article-infobar-topics.js"></script>
+            <script src="./v-article-infobar.js"></script>
+            <script src="./v-article-list-item.js"></script>
+            <script src="./v-article-list.js"></script>
+            <script src="./v-back-to-top.js"></script>
+            <script src="./v-blockquote.js"></script>
+            <script src="./v-brand-stripe.js"></script>
+            <script src="./v-breadcrumb.js"></script>
+            <script src="./v-breadcrumbs.js"></script>
+            <script src="./v-button.js"></script>
+            <script src="./v-callout-banner.js"></script>
+            <script src="./v-card-grid.js"></script>
+            <script src="./v-card.js"></script>
+            <script src="./v-carousel-item.js"></script>
+            <script src="./v-carousel.js"></script>
+            <script src="./v-checkbox.js"></script>
+            <script src="./v-column.js"></script>
+            <script src="./v-cta.js"></script>
+            <script src="./v-custom-slider.js"></script>
+            <script src="./v-desktop-navbar-item.js"></script>
+            <script src="./v-dollar-percent-input.js"></script>
+            <script src="./v-drilldown-menu-button.js"></script>
+            <script src="./v-drilldown-menu-link.js"></script>
+            <script src="./v-drilldown-menu-page.js"></script>
+            <script src="./v-drilldown-menu.js"></script>
+            <script src="./v-dropdown-button.js"></script>
+            <script src="./v-dropdown-item.js"></script>
+            <script src="./v-educational-content-card.js"></script>
+            <script src="./v-error-text.js"></script>
+            <script src="./v-event.js"></script>
+            <script src="./v-expandable-area.js"></script>
+            <script src="./v-expandable-para.js"></script>
+            <script src="./v-footer-nav-item.js"></script>
+            <script src="./v-footer.js"></script>
+            <script src="./v-hamburger.js"></script>
+            <script src="./v-heading.js"></script>
+            <script src="./v-hero.js"></script>
+            <script src="./v-icon.js"></script>
+            <script src="./v-info-banner.js"></script>
+            <script src="./v-input-field.js"></script>
+            <script src="./v-library-left-navigation-link.js"></script>
+            <script src="./v-library-left-navigation.js"></script>
+            <script src="./v-library-right-panel-item.js"></script>
+            <script src="./v-library.js"></script>
+            <script src="./v-list-item.js"></script>
+            <script src="./v-list.js"></script>
+            <script src="./v-logo.js"></script>
+            <script src="./v-mobile-breadcrumb.js"></script>
+            <script src="./v-mobile-navigation-container.js"></script>
+            <script src="./v-mobile-navigation-footer.js"></script>
+            <script src="./v-mobile-navigation-topbar.js"></script>
+            <script src="./v-modal.js"></script>
+            <script src="./v-navigation-icon.js"></script>
+            <script src="./v-notification.js"></script>
+            <script src="./v-pagination.js"></script>
+            <script src="./v-pdf-viewer.js"></script>
+            <script src="./v-percentage-input.js"></script>
+            <script src="./v-primary-navigation-link.js"></script>
+            <script src="./v-primary-navigation.js"></script>
+            <script src="./v-progress-nav-item.js"></script>
+            <script src="./v-progress-nav.js"></script>
+            <script src="./v-radio-group-input.js"></script>
+            <script src="./v-radio-group.js"></script>
+            <script src="./v-search-field.js"></script>
+            <script src="./v-secondary-navigation-link.js"></script>
+            <script src="./v-secondary-navigation-tab.js"></script>
+            <script src="./v-secondary-navigation.js"></script>
+            <script src="./v-select.js"></script>
+            <script src="./v-share.js"></script>
+            <script src="./v-simple-nav.js"></script>
+            <script src="./v-simple-table.js"></script>
+            <script src="./v-slider.js"></script>
+            <script src="./v-speech-bubble.js"></script>
+            <script src="./v-styled-grid-item.js"></script>
+            <script src="./v-styled-grid.js"></script>
+            <script src="./v-textarea.js"></script>
+            <script src="./v-ticker.js"></script>
+            <script src="./v-tile.js"></script>
+            <script src="./v-tooltip.js"></script>
+            <script src="./v-video.js"></script>
+            <script src="./v-wysiwyg.js"></script>
+</head>
+
+<body style="margin: 0;">
+  <h1>v-mobile-navigation-container with search box and status icon with menu links</h1>
+
+  <div class="v-mobile-navigation-container__wrapper">
+    <v-mobile-navigation-container
+      logoHref="/"
+      logoSrc=""
+      @vmobilenavigationtopbar-click="${() => console.log('X clicked')}"
+    >
+      <v-drilldown-menu class="">
+        <v-drilldown-menu-page
+          staticSearch
+          id="main"
+          level="0"
+          searchResult="{}"
+          @vsearchfield-keyup="${e => displaySearchResult(e.detail.value)}"
+          searchLink="/"
+        >
+          <v-drilldown-menu-button to="retirement-accounts">
+            My Retirement Accounts
+          </v-drilldown-menu-button>
+          <v-drilldown-menu-button to="financial-wellness" selected>
+            Financial Wellness<v-icon circletext="25" size="22px"></v-icon>
+          </v-drilldown-menu-button>
+          <v-drilldown-menu-link href="/">
+            Get Professional Advice
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">My Profile</v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">My Messages<v-icon circletext="25" size="22px"></v-icon></v-drilldown-menu-link>
+
+          <div slot="popularLinks">
+            Popular Pages:
+            <span style="text-decoration:underline;color:#145A7B;"
+              >Beneficiaries</span
+            ><span>&nbsp; ,&nbsp; </span
+            ><span style="text-decoration:underline;color:#145A7B;"
+              >Getting Your Money</span
+            ><span>&nbsp; ,&nbsp; </span
+            ><span style="text-decoration:underline;color:#145A7B;"
+              >Forgot PIN</span
+            ><span>&nbsp; ,&nbsp; </span
+            ><span style="text-decoration:underline;color:#145A7B;"
+              >Get Investment Advice</span
+            >
+          </div>
+        </v-drilldown-menu-page>
+
+        <v-drilldown-menu-page
+          breadcrumbText="My Retirement Accounts"
+          from="main"
+          id="retirement-accounts"
+          level="1"
+          title="My Retirement Accounts"
+          blockTitleTranslation
+          blockBreadcrumbTranslation
+        >
+          <v-drilldown-menu-link href="/">
+            Account 1
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/" selected>
+            Account 2
+          </v-drilldown-menu-link>
+        </v-drilldown-menu-page>
+
+        <v-drilldown-menu-page
+          breadcrumbText="Main Menu"
+          from="main"
+          id="financial-wellness"
+          level="1"
+          title="Financial Wellness"
+        >
+          <v-drilldown-menu-link href="/">
+            My Resource Center
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/" selected>
+            Financial Wellness Assessment
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">
+            Life Stage Guidance
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">
+            Calculators & Tools
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">
+            Personal Finance Management
+          </v-drilldown-menu-link>
+        </v-drilldown-menu-page>
+      </v-drilldown-menu>
+
+      <v-mobile-navigation-footer class="">
+        <v-icon linkButton name="commentdots"> Help Center </v-icon>
+        <v-icon linkButton name="globeamericas"> Ver en EspaÃ±ol </v-icon>
+        <v-icon linkButton name="profile"> Sign Out </v-icon>
+      </v-mobile-navigation-footer>
+    </v-mobile-navigation-container>
+  </div>
+
+  <br></br>
+  <br></br>
+
+  <h1>v-mobile-navigation-container without search box</h1>
+
+  <div class="v-mobile-navigation-container__wrapper">
+    <v-mobile-navigation-container
+      logoHref="/"
+      logoSrc=""
+      @vmobilenavigationtopbar-click="${() => console.log('X clicked')}"
+      disableSearch
+    >
+      <v-drilldown-menu class="">
+        <v-drilldown-menu-page
+          isStaticSearch
+          id="main"
+          level="0"
+          searchResult="{}"
+          @vsearchfield-keyup="${e => displaySearchResult(e.detail.value)}"
+          searchLink="/"
+          staticSearch
+        >
+          <v-drilldown-menu-link href="/">
+            My Retirement Accounts
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-button to="financial-wellness" selected>
+            Financial Wellness
+          </v-drilldown-menu-button>
+          <v-drilldown-menu-link href="/">
+            Get Professional Advice
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">My Profile</v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">My Messages</v-drilldown-menu-link>
+
+          <div slot="popularLinks">
+            Popular Pages:
+            <span style="text-decoration:underline;color:#145A7B;"
+              >Beneficiaries</span
+            ><span>&nbsp; ,&nbsp; </span
+            ><span style="text-decoration:underline;color:#145A7B;"
+              >Getting Your Money</span
+            ><span>&nbsp; ,&nbsp; </span
+            ><span style="text-decoration:underline;color:#145A7B;"
+              >Forgot PIN</span
+            ><span>&nbsp; ,&nbsp; </span
+            ><span style="text-decoration:underline;color:#145A7B;"
+              >Get Investment Advice</span
+            >
+          </div>
+        </v-drilldown-menu-page>
+
+        <v-drilldown-menu-page
+          breadcrumbText="Main Menu"
+          from="main"
+          id="financial-wellness"
+          level="1"
+          title="Financial Wellness"
+        >
+          <v-drilldown-menu-link href="/">
+            My Resource Center
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/" selected>
+            Financial Wellness Assessment
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">
+            Life Stage Guidance
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">
+            Calculators & Tools
+          </v-drilldown-menu-link>
+          <v-drilldown-menu-link href="/">
+            Personal Finance Management
+          </v-drilldown-menu-link>
+        </v-drilldown-menu-page>
+      </v-drilldown-menu>
+
+      <v-mobile-navigation-footer class="">
+        <v-icon linkButton name="commentdots"> Help Center </v-icon>
+        <v-icon linkButton name="globeamericas"> Ver en EspaÃ±ol </v-icon>
+        <v-icon linkButton name="profile"> Sign Out </v-icon>
+      </v-mobile-navigation-footer>
+    </v-mobile-navigation-container>
+  </div>
+</body>
+
+</html>

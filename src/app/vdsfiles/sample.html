@@ -1,0 +1,83 @@
+<html>
+    <body>
+        <h1 aria-level="2">v-button</h1>
+
+        <h2>Standard</h2>
+        <v-button primary>Primary Button</v-button>
+        <v-button secondary>Secondary Button</v-button>
+    
+        <h2>Disabled</h2>
+        <v-button primary disabled>Primary Button - Disabled</v-button>
+        <v-button secondary disabled>Secondary Button - Disabled</v-button>
+    
+        <h2>Disabled and Spinner</h2>
+        <v-button primary disabled busy>Primary Button - Disabled</v-button>
+        <v-button secondary disabled busy>Secondary Button - Disabled</v-button>
+    
+        <h2>Links</h2>
+        <v-button href="https://www.voya.com" primary>Link to Voya</v-button>
+        <v-button href="https://my.voya.com/" secondary>Link to MyVoya</v-button>
+    
+        <h2>Button with External Icon href is not given</h2>
+        <v-button primary
+          >External Link
+          <v-icon
+            name="externalLink"
+            color="--v-colors__white"
+            size="18px"
+            style="margin-left:8px;"
+          ></v-icon
+        ></v-button>
+    
+        <h2>
+          Button without External Icon if href is '#' and taget is '_blank'
+        </h2>
+        <v-button primary target="_blank" href="#"
+          >Without External Icon Link
+        </v-button>
+    
+        <h2>
+          Button without External Icon if href is '#' and taget is '_blank'
+        </h2>
+        <v-button secondary target="_blank" href="www.google.com"
+          >With External Icon Link with scondary
+        </v-button>
+    
+        <h2>
+          Button with External Icon Target as "_blank" and href is external URL
+        </h2>
+        <v-button primary target="_blank" href="https://www.google.com"
+          >External Link
+        </v-button>
+    
+        <h2>Button with External Icon Target as "" and href is external URL</h2>
+        <v-button primary href="https://www.google.com">External Link </v-button>
+    
+        <h2>Button with External Icon Target as "" and href is github Pages URL</h2>
+        <v-button primary href="https://pages.github.voya.net/Voya/VDS"
+          >External Link
+        </v-button>
+    
+        <h2>
+          Button without External Icon if href is '/foo/bar' (internal action) and taget is ''
+        </h2>
+        <v-button primary href="/foo/bar"
+          >Without External Icon Link
+        </v-button>
+    
+        <h2>Form Submit</h2>
+        <form method="GET" id="test" name="test">
+          <v-input-field
+            labeltext="Field 1"
+            name="field1"
+            type="text"
+          ></v-input-field>
+          <v-button primary type="submit">Submit</v-button>
+        </form>
+    
+        <h2>Links with aria label</h2>
+        <v-button href="https://www.voya.com" primary arialabel="Link to Voya">Link to Voya</v-button>
+        <v-button href="https://my.voya.com/" secondary arialabel="Link to MyVoya">Link to MyVoya</v-button>
+        <v-button href="https://www.google.com/" secondary arialabel="Link to Google">Link to Google</v-button>
+    </body>
+</html>

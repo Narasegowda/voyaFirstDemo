@@ -1,0 +1,219 @@
+<ion-content>
+  <div class="height-100 backColor">
+
+    <div class="v-mobile-navigation-container__wrapper">
+      <v-mobile-navigation-container logoHref="/vds"
+        logoSrc="https://purepng.com/public/uploads/large/purepng.com-voya-financial-logologobrand-logoiconslogos-251519938224xbtfv.png">
+        <v-drilldown-menu class="">
+          <v-drilldown-menu-page staticSearch id="main" level="0" searchResult="{}" searchLink="/">
+            <v-drilldown-menu-button to="retirement-accounts">
+              My Retirement Accounts
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button to="financial-wellness" selected>
+              Financial Wellness
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-link href="/">
+              Get Professional Advice
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link (click)="newBrowser()">My Profile</v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">My Messages
+            </v-drilldown-menu-link>
+
+            <div slot="popularLinks">
+              Popular Pages:
+              <span style="text-decoration:underline;color:#145A7B;">Beneficiaries</span><span>&nbsp; ,&nbsp;
+              </span><span style="text-decoration:underline;color:#145A7B;">Getting Your Money</span><span>&nbsp;
+                ,&nbsp;
+              </span><span style="text-decoration:underline;color:#145A7B;">Forgot PIN</span><span>&nbsp; ,&nbsp;
+              </span><span style="text-decoration:underline;color:#145A7B;">Get Investment Advice</span>
+            </div>
+          </v-drilldown-menu-page>
+
+          <v-drilldown-menu-page breadcrumbText="My Retirement Accounts" from="main" id="retirement-accounts" level="1"
+            title="My Retirement Accounts" blockTitleTranslation blockBreadcrumbTranslation>
+            <v-drilldown-menu-link  (click)="withinApp()">
+              Account 1
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link  (click)="tabedBalance()" selected>
+              Account 2
+            </v-drilldown-menu-link>
+          </v-drilldown-menu-page>
+
+          <v-drilldown-menu-page breadcrumbText="Main Menu" from="main" id="financial-wellness" level="1"
+            title="Financial Wellness">
+            <v-drilldown-menu-link href="/">
+              My Resource Center
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/" selected>
+              Financial Wellness Assessment
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Life Stage Guidance
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Calculators & Tools
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Personal Finance Management
+            </v-drilldown-menu-link>
+          </v-drilldown-menu-page>
+        </v-drilldown-menu>
+
+        <v-mobile-navigation-footer class="">
+          <v-icon linkButton name="commentdots"> Contact US </v-icon>
+          <v-icon linkButton name="globeamericas"> Ver en Español </v-icon>
+          <v-icon linkButton name="profile"> Sign Out </v-icon>
+        </v-mobile-navigation-footer>
+      </v-mobile-navigation-container>
+    </div>
+
+    <ion-row>
+
+    </ion-row>
+    <ion-row class="margin-25">
+      <ion-col class="ion-text-start">
+        <p class="mb-0">Employer’s Savings Plan </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="margin-left-25">
+      <ion-col>
+        <p class="bold orange font-24">Balance Summary</p>
+      </ion-col>
+    </ion-row>
+
+
+    <v-card class="center">
+      <p class="mb-10">Current Balance*</p>
+      <ion-row>
+        <p class="font-24 darkgb mb-10">$35,000.00</p>
+      </ion-row>
+      <p class="font-12 mb-0">as of Mar 22, 2021</p>
+      <p class="font-12 mb-15">*Does not include Loan Balance</p>
+
+      <ion-row class="hline">
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="mb-10">Personal Rate of Return YTD</p>
+          <p class="orange bold font-24">15.62%</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="hline">
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="mb-10 font-15">Loan Payment</p>
+          <p class="orange font-24 bold margin-0">$327.85</p>
+        </ion-col>
+        <ion-col>
+          <p class="mb-10 font-15">Next Due Date</p>
+          <p class=" margin-0">01/13/21</p>
+        </ion-col>
+        <ion-col>
+          <p class="mb-10 font-15">Payoff Amount</p>
+          <p class=" margin-0 ">$12,829.92</p>
+        </ion-col>
+      </ion-row>
+    </v-card>
+
+    <ion-row>
+      <ion-col>
+        <p class="margin-25 mb-15">Balance History</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="margin-left-25">
+      <ion-col size="2" class="ion-text-start">
+        <p class="mb-0">Latest</p>
+      </ion-col>
+      <ion-col size="9.5" class="center">
+        <div class="progress-outer">
+          <div class="progress-inner percent80"></div>
+      </div>
+      <p class="mb-15">$35,000.00</p>
+      </ion-col>
+      <ion-col size="0.5">
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="margin-left-25">
+      <ion-col size="2" class="ion-text-start">
+        <p class="mb-0">2020</p>
+      </ion-col>
+      <ion-col size="9.5" class="center">
+        <div class="progress-outer">
+          <div class="progress-inner percent70"></div>
+      </div>
+      <p class="mb-15">$34,092.33</p>
+      </ion-col>
+      <ion-col size="0.5">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="margin-left-25">
+      <ion-col size="2" class="ion-text-start">
+        <p class="mb-0">2019</p>
+      </ion-col>
+      <ion-col size="9.5" class="center">
+        <div class="progress-outer">
+          <div class="progress-inner percent60"></div>
+      </div>
+      <p class="mb-15">$30,466.00</p>
+      </ion-col>
+      <ion-col size="0.5">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="margin-left-25">
+      <ion-col size="2" class="ion-text-start">
+        <p class="mb-0">2018</p>
+      </ion-col>
+      <ion-col size="9.5" class="center">
+        <div class="progress-outer">
+          <div class="progress-inner percent50"></div>
+      </div>
+      <p class="mb-15">$18,127.91</p>
+      </ion-col>
+      <ion-col size="0.5">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="margin-left-25 mb-60">
+      <ion-col size="2" class="ion-text-start">
+        <p class="mb-0">2017</p>
+      </ion-col>
+      <ion-col size="9.5" class="center">
+        <div class="progress-outer">
+          <div class="progress-inner percent40"></div>
+      </div>
+      <p>$10,098.27</p>
+      </ion-col>
+      <ion-col size="0.5">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-text-center font-12 bottomTabs">
+      <ion-col>
+        <img class="w-60" (click)="tabedHome()" src="../../assets/icon/u735.png"/>
+        <p class="mb-0">Home</p>
+      </ion-col>
+      <ion-col>
+        <img class="w-60" (click)="tabedBalance()" src="../../assets/icon/u746.png"/>
+        <p class="mb-0">Balances</p>
+      </ion-col>
+      <ion-col>
+        <img class="w-60" src="../../assets/icon/u759.png"/>
+        <p class="mb-0">Contributions</p>
+      </ion-col>
+      <ion-col>
+        <img class="w-60" src="../../assets/icon/u770.png"/>
+        <p class="mb-0">Investments</p>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+</ion-content>

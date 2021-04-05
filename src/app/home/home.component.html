@@ -1,0 +1,192 @@
+<ion-content>
+  <div class="height-100 backColor">
+
+    <div class="v-mobile-navigation-container__wrapper">
+      <v-mobile-navigation-container logoHref="/vds"
+        logoSrc="https://purepng.com/public/uploads/large/purepng.com-voya-financial-logologobrand-logoiconslogos-251519938224xbtfv.png">
+        <v-drilldown-menu class="">
+          <v-drilldown-menu-page staticSearch id="main" level="0" searchResult="{}" searchLink="/">
+            <v-drilldown-menu-button to="retirement-accounts">
+              My Retirement Accounts
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button to="financial-wellness">
+              Financial Wellness
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-link href="/">
+              Get Professional Advice
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link (click)="newBrowser()">My Profile</v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">My Messages
+            </v-drilldown-menu-link>
+
+            <div slot="popularLinks">
+              Popular Pages:
+              <span style="text-decoration:underline;color:#145A7B;">Beneficiaries</span><span>&nbsp; ,&nbsp;
+              </span><span style="text-decoration:underline;color:#145A7B;">Getting Your Money</span><span>&nbsp;
+                ,&nbsp;
+              </span><span style="text-decoration:underline;color:#145A7B;">Forgot PIN</span><span>&nbsp; ,&nbsp;
+              </span><span style="text-decoration:underline;color:#145A7B;">Get Investment Advice</span>
+            </div>
+          </v-drilldown-menu-page>
+
+          <v-drilldown-menu-page breadcrumbText="My Retirement Accounts" from="main" id="retirement-accounts" level="1"
+            title="My Retirement Accounts" blockTitleTranslation blockBreadcrumbTranslation>
+            <v-drilldown-menu-link  (click)="withinApp()">
+              My Employer 401k Account (In App Browser)
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link>
+              Employer Savings Account
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link>
+              YRC Savings Account
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link>
+              Non Qualified Savings Plan
+            </v-drilldown-menu-link>
+
+          </v-drilldown-menu-page>
+
+          <v-drilldown-menu-page breadcrumbText="Main Menu" from="main" id="financial-wellness" level="1"
+            title="Financial Wellness">
+            <v-drilldown-menu-link href="/">
+              My Resource Center
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Financial Wellness Assessment
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Life Stage Guidance
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Calculators & Tools
+            </v-drilldown-menu-link>
+            <v-drilldown-menu-link href="/">
+              Personal Finance Management
+            </v-drilldown-menu-link>
+          </v-drilldown-menu-page>
+        </v-drilldown-menu>
+
+        <v-mobile-navigation-footer class="">
+          <v-icon linkButton name="commentdots"> Contact US </v-icon>
+          <v-icon linkButton name="globeamericas"> Ver en Español </v-icon>
+          <v-icon linkButton name="profile"> Sign Out </v-icon>
+        </v-mobile-navigation-footer>
+      </v-mobile-navigation-container>
+    </div>
+
+    <ion-row>
+
+    </ion-row>
+    <ion-row class="margin-25">
+      <ion-col class="ion-text-center">
+        <p class="margin-0">Total Balance </p>
+      </ion-col>
+      <ion-col>
+        <p class="margin-0 orange font-24 bold">$40,827.95</p>
+      </ion-col>
+    </ion-row>
+
+
+    <v-card class="center pb-20">
+      <p>My Estimated Monthly</p>
+      <ion-row class="mb-20">
+        <ion-col class="ion-text-center border-right-light">
+          <p class="margin-5 bold orange font-24">$4,279</p>
+          <p class="margin-5">Income</p>
+        </ion-col>
+        <ion-col class="ion-text-center border-right-light">
+          <p class="margin-5 bold font-24">$4,768</p>
+          <p class="margin-5">Goal</p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <p class="margin-5 bold font-24">$489</p>
+          <p class="margin-5">Gap</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="mb-10">
+        <ion-col size="2">
+          <img src="../../assets/icon/u2796.png"/>
+        </ion-col>
+        <ion-col size="10" class="center">
+          <div class="progress-outer">
+            <div class="progress-inner"></div>
+        </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <p class="linkcolor mb-10 text-underline">Make Changes</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="hline">
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <p class="linkcolor margin-0 text-underline">See detailed estimate</p>
+        </ion-col>
+      </ion-row>
+      
+    </v-card>
+
+    
+    <ion-row class="margin-25">
+      <ion-col size="0.1">
+        
+      </ion-col>
+      <ion-col size="11.9">
+        <p class="mb-10">My Accounts</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-grid class="color-backdiv radius-20 width-95">
+      
+      <ion-row>
+        <ion-col size="0.5"></ion-col>
+        <ion-col size="11.5">
+          <p class="mb-15">Employer's Savings Plan</p>
+        </ion-col>
+      </ion-row>
+     
+      <ion-row>
+        <ion-col size="0.5"></ion-col>
+        <ion-col size="7.5">
+          <p class="margin-0 font-24">$35,000.00</p>
+          <p class="mb-10 font-12">As of Mar 22, 2021</p>
+        </ion-col>
+        <ion-col size="4">
+          <v-button (click)="tabedBalance()" secondary>View</v-button>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+
+    <ion-row class="mb-20"></ion-row>
+
+    <ion-grid class="color-backdivSecond radius-20 width-95">
+      
+      <ion-row>
+        <ion-col size="0.5"></ion-col>
+        <ion-col size="11.5">
+          <p class="mb-15">Employer's Savings Plan</p>
+        </ion-col>
+      </ion-row>
+     
+      <ion-row>
+        <ion-col size="0.5"></ion-col>
+        <ion-col size="7.5">
+          <p class="margin-0 font-24">$35,000.00</p>
+          <p class="mb-10 font-12">As of Mar 22, 2021</p>
+        </ion-col>
+        <ion-col size="4">
+          <v-button (click)="tabedBalance()" secondary>View</v-button>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+
+
+
+  </div>
+
+</ion-content>

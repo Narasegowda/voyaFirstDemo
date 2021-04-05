@@ -1,0 +1,272 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "defaultProject": "app",
+  "newProjectRoot": "projects",
+  "projects": {
+    "app": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "allowedCommonJsDependencies": ["chart.js"],
+            "outputPath": "www",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
+            ],
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss",
+              "src/app/vdsfiles/global_styles.css"
+            ],
+            "scripts": [
+              "src/app/vdsfiles/v-polyfills.js",
+              "src/app/vdsfiles/v-theme-component.js",
+              "src/app/vdsfiles/doc-bundle.js",
+              "src/app/vdsfiles/v-article-infobar-topics.js",
+              "src/app/vdsfiles/v-article-infobar.js",
+              "src/app/vdsfiles/v-article-list-item.js",
+              "src/app/vdsfiles/v-article-list.js",
+              "src/app/vdsfiles/v-back-to-top.js",
+              "src/app/vdsfiles/v-blockquote.js",
+              "src/app/vdsfiles/v-brand-stripe.js",
+              "src/app/vdsfiles/v-breadcrumb.js",
+              "src/app/vdsfiles/v-breadcrumbs.js",
+              "src/app/vdsfiles/v-button.js",
+              "src/app/vdsfiles/v-callout-banner.js",
+              "src/app/vdsfiles/v-card-grid.js",
+              "src/app/vdsfiles/v-card.js",
+              "src/app/vdsfiles/v-carousel-item.js",
+              "src/app/vdsfiles/v-carousel.js",
+              "src/app/vdsfiles/v-checkbox.js",
+              "src/app/vdsfiles/v-column.js",
+              "src/app/vdsfiles/v-cta.js",
+              "src/app/vdsfiles/v-custom-slider.js",
+              "src/app/vdsfiles/v-desktop-navbar-item.js",
+              "src/app/vdsfiles/v-dollar-percent-input.js",
+              "src/app/vdsfiles/v-drilldown-menu-button.js",
+              "src/app/vdsfiles/v-drilldown-menu-link.js",
+              "src/app/vdsfiles/v-drilldown-menu-page.js",
+              "src/app/vdsfiles/v-drilldown-menu.js",
+              "src/app/vdsfiles/v-dropdown-button.js",
+              "src/app/vdsfiles/v-dropdown-item.js",
+              "src/app/vdsfiles/v-educational-content-card.js",
+              "src/app/vdsfiles/v-error-text.js",
+              "src/app/vdsfiles/v-event.js",
+              "src/app/vdsfiles/v-expandable-area.js",
+              "src/app/vdsfiles/v-expandable-para.js",
+              "src/app/vdsfiles/v-footer-nav-item.js",
+              "src/app/vdsfiles/v-footer.js",
+              "src/app/vdsfiles/v-hamburger.js",
+              "src/app/vdsfiles/v-heading.js",
+              "src/app/vdsfiles/v-hero.js",
+              "src/app/vdsfiles/v-icon.js",
+              "src/app/vdsfiles/v-info-banner.js",
+              "src/app/vdsfiles/v-input-field.js",
+              "src/app/vdsfiles/v-library-left-navigation-link.js",
+              "src/app/vdsfiles/v-library-left-navigation.js",
+              "src/app/vdsfiles/v-library-right-panel-item.js",
+              "src/app/vdsfiles/v-library.js",
+              "src/app/vdsfiles/v-list-item.js",
+              "src/app/vdsfiles/v-list.js",
+              "src/app/vdsfiles/v-logo.js",
+              "src/app/vdsfiles/v-mobile-breadcrumb.js",
+              "src/app/vdsfiles/v-mobile-navigation-container.js",
+              "src/app/vdsfiles/v-mobile-navigation-footer.js",
+              "src/app/vdsfiles/v-mobile-navigation-topbar.js",
+              "src/app/vdsfiles/v-modal.js",
+              "src/app/vdsfiles/v-navigation-icon.js",
+              "src/app/vdsfiles/v-notification.js",
+              "src/app/vdsfiles/v-pagination.js",
+              "src/app/vdsfiles/v-pdf-viewer.js",
+              "src/app/vdsfiles/v-percentage-input.js",
+              "src/app/vdsfiles/v-primary-navigation-link.js",
+              "src/app/vdsfiles/v-primary-navigation.js",
+              "src/app/vdsfiles/v-progress-nav-item.js",
+              "src/app/vdsfiles/v-progress-nav.js",
+              "src/app/vdsfiles/v-radio-group-input.js",
+              "src/app/vdsfiles/v-radio-group.js",
+              "src/app/vdsfiles/v-search-field.js",
+              "src/app/vdsfiles/v-secondary-navigation-link.js",
+              "src/app/vdsfiles/v-secondary-navigation-tab.js",
+              "src/app/vdsfiles/v-secondary-navigation.js",
+              "src/app/vdsfiles/v-select.js",
+              "src/app/vdsfiles/v-share.js",
+              "src/app/vdsfiles/v-simple-nav.js",
+              "src/app/vdsfiles/v-simple-table.js",
+              "src/app/vdsfiles/v-slider.js",
+              "src/app/vdsfiles/v-speech-bubble.js",
+              "src/app/vdsfiles/v-styled-grid-item.js",
+              "src/app/vdsfiles/v-styled-grid.js",
+              "src/app/vdsfiles/v-textarea.js",
+              "src/app/vdsfiles/v-ticker.js",
+              "src/app/vdsfiles/v-tile.js",
+              "src/app/vdsfiles/v-tooltip.js",
+              "src/app/vdsfiles/v-video.js",
+              "src/app/vdsfiles/v-wysiwyg.js",
+              "src/app/vdsfiles/analytics.js",
+              "src/app/vdsfiles/linkid.js",
+              "src/app/vdsfiles/gtm.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            },
+            "ci": {
+              "progress": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "app:build:production"
+            },
+            "ci": {
+              "progress": false
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "styles": [],
+            "scripts": [],
+            "assets": [
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
+            ]
+          },
+          "configurations": {
+            "ci": {
+              "progress": false,
+              "watch": false
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "app:serve:production"
+            },
+            "ci": {
+              "devServerTarget": "app:serve:ci"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "app:build:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "app:ionic-cordova-build",
+            "devServerTarget": "app:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "app:ionic-cordova-build:production",
+              "devServerTarget": "app:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@ionic/angular-toolkit"
+  },
+  "schematics": {
+    "@ionic/angular-toolkit:component": {
+      "styleext": "scss"
+    },
+    "@ionic/angular-toolkit:page": {
+      "styleext": "scss"
+    }
+  }
+}
