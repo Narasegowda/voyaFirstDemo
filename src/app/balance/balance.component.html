@@ -9,7 +9,7 @@
             <v-drilldown-menu-button to="retirement-accounts">
               My Retirement Accounts
             </v-drilldown-menu-button>
-            <v-drilldown-menu-button to="financial-wellness" selected>
+            <v-drilldown-menu-button to="financial-wellness">
               Financial Wellness
             </v-drilldown-menu-button>
             <v-drilldown-menu-link href="/">
@@ -31,12 +31,21 @@
 
           <v-drilldown-menu-page breadcrumbText="My Retirement Accounts" from="main" id="retirement-accounts" level="1"
             title="My Retirement Accounts" blockTitleTranslation blockBreadcrumbTranslation>
-            <v-drilldown-menu-link  (click)="withinApp()">
-              Account 1
-            </v-drilldown-menu-link>
-            <v-drilldown-menu-link  (click)="tabedBalance()" selected>
-              Account 2
-            </v-drilldown-menu-link>
+            <v-drilldown-menu-button (click)="withinApp()">
+              My Employer 401k Account (In App Browser)
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button>
+              Employer Savings Account
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button>
+              YRC Savings Account
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button>
+              Non Qualified Savings Plan
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button (click)="tabedHome()">
+             Balances
+            </v-drilldown-menu-button>
           </v-drilldown-menu-page>
 
           <v-drilldown-menu-page breadcrumbText="Main Menu" from="main" id="financial-wellness" level="1"
@@ -44,7 +53,7 @@
             <v-drilldown-menu-link href="/">
               My Resource Center
             </v-drilldown-menu-link>
-            <v-drilldown-menu-link href="/" selected>
+            <v-drilldown-menu-link href="/">
               Financial Wellness Assessment
             </v-drilldown-menu-link>
             <v-drilldown-menu-link href="/">
@@ -128,8 +137,8 @@
       <ion-col size="9.5" class="center">
         <div class="progress-outer">
           <div class="progress-inner percent80"></div>
-      </div>
-      <p class="mb-15">$35,000.00</p>
+        </div>
+        <p class="mb-15">$35,000.00</p>
       </ion-col>
       <ion-col size="0.5">
       </ion-col>
@@ -142,8 +151,8 @@
       <ion-col size="9.5" class="center">
         <div class="progress-outer">
           <div class="progress-inner percent70"></div>
-      </div>
-      <p class="mb-15">$34,092.33</p>
+        </div>
+        <p class="mb-15">$34,092.33</p>
       </ion-col>
       <ion-col size="0.5">
       </ion-col>
@@ -157,8 +166,8 @@
       <ion-col size="9.5" class="center">
         <div class="progress-outer">
           <div class="progress-inner percent60"></div>
-      </div>
-      <p class="mb-15">$30,466.00</p>
+        </div>
+        <p class="mb-15">$30,466.00</p>
       </ion-col>
       <ion-col size="0.5">
       </ion-col>
@@ -172,8 +181,8 @@
       <ion-col size="9.5" class="center">
         <div class="progress-outer">
           <div class="progress-inner percent50"></div>
-      </div>
-      <p class="mb-15">$18,127.91</p>
+        </div>
+        <p class="mb-15">$18,127.91</p>
       </ion-col>
       <ion-col size="0.5">
       </ion-col>
@@ -187,33 +196,14 @@
       <ion-col size="9.5" class="center">
         <div class="progress-outer">
           <div class="progress-inner percent40"></div>
-      </div>
-      <p>$10,098.27</p>
+        </div>
+        <p>$10,098.27</p>
       </ion-col>
       <ion-col size="0.5">
       </ion-col>
     </ion-row>
 
-
-    <ion-row class="ion-text-center font-12 bottomTabs">
-      <ion-col>
-        <img class="w-60" (click)="tabedHome()" src="../../assets/icon/u735.png"/>
-        <p class="mb-0">Home</p>
-      </ion-col>
-      <ion-col>
-        <img class="w-60" (click)="tabedBalance()" src="../../assets/icon/u746.png"/>
-        <p class="mb-0">Balances</p>
-      </ion-col>
-      <ion-col>
-        <img class="w-60" src="../../assets/icon/u759.png"/>
-        <p class="mb-0">Contributions</p>
-      </ion-col>
-      <ion-col>
-        <img class="w-60" src="../../assets/icon/u770.png"/>
-        <p class="mb-0">Investments</p>
-      </ion-col>
-    </ion-row>
-
+    <app-footer></app-footer>
   </div>
 
 </ion-content>

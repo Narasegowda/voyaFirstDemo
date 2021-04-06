@@ -31,19 +31,21 @@
 
           <v-drilldown-menu-page breadcrumbText="My Retirement Accounts" from="main" id="retirement-accounts" level="1"
             title="My Retirement Accounts" blockTitleTranslation blockBreadcrumbTranslation>
-            <v-drilldown-menu-link  (click)="withinApp()">
+            <v-drilldown-menu-button (click)="withinApp()">
               My Employer 401k Account (In App Browser)
-            </v-drilldown-menu-link>
-            <v-drilldown-menu-link>
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button>
               Employer Savings Account
-            </v-drilldown-menu-link>
-            <v-drilldown-menu-link>
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button>
               YRC Savings Account
-            </v-drilldown-menu-link>
-            <v-drilldown-menu-link>
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button>
               Non Qualified Savings Plan
-            </v-drilldown-menu-link>
-
+            </v-drilldown-menu-button>
+            <v-drilldown-menu-button (click)="tabedBalance()">
+             Balances
+            </v-drilldown-menu-button>
           </v-drilldown-menu-page>
 
           <v-drilldown-menu-page breadcrumbText="Main Menu" from="main" id="financial-wellness" level="1"

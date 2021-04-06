@@ -41,6 +41,9 @@ export class HomeComponent implements OnInit {
     let currentTab = this.cookieService.get("currentTab")
     this.router.navigateByUrl(currentTab)
   }
+  tabedHome(){
+    this.router.navigateByUrl("/home")
+  }
   tabedBalance(){
     this.router.navigateByUrl("/balance")
   }

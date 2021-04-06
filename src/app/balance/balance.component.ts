@@ -45,7 +45,7 @@ export class BalanceComponent implements OnInit {
     this.router.navigateByUrl("/home")
   }
   tabedBalance(){
-    this.router.navigateByUrl("/balance")
+    this.router.navigateByUrl("balance")
   }
 
 }
