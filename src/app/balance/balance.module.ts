@@ -5,7 +5,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from '../components/footer/footer.component';
 import { BalancePageRoutingModule } from './balance-routing.module';
-
+import { NavbarComponent } from '../components/navbar/navbar.component';
 import { BalanceComponent } from './balance.component';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { BalanceComponent } from './balance.component';
     BalancePageRoutingModule,
     AgGridModule.withComponents([]),
   ],
-  declarations: [BalanceComponent,FooterComponent],
+  declarations: [BalanceComponent,FooterComponent,NavbarComponent],
   exports: [],
   schemas: []
 })

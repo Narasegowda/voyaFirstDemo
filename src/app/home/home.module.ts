@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomeComponent } from './home.component';
+import { FooterComponent } from '../components/footer/footer.component';
+import { NavbarComponent } from '../components/navbar/navbar.component';
 
 @NgModule({
   imports: [
@@ -16,6 +18,8 @@ import { HomeComponent } from './home.component';
     HomePageRoutingModule,
     AgGridModule.withComponents([]),
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent,FooterComponent,NavbarComponent],
+  exports: [],
+  schemas: []
 })
 export class HomePageModule {}

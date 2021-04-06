@@ -1,0 +1,74 @@
+<div class="v-mobile-navigation-container__wrapper">
+  <v-mobile-navigation-container logoHref="/vds"
+    logoSrc="https://purepng.com/public/uploads/large/purepng.com-voya-financial-logologobrand-logoiconslogos-251519938224xbtfv.png">
+    <v-drilldown-menu class="">
+      <v-drilldown-menu-page staticSearch id="main" level="0" searchResult="{}" searchLink="/">
+        <v-drilldown-menu-button to="retirement-accounts">
+          My Retirement Accounts
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button to="financial-wellness">
+          Financial Wellness
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button>
+          Get Professional Advice
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button (click)="newBrowser()">My Profile</v-drilldown-menu-button>
+        <v-drilldown-menu-button>My Messages
+        </v-drilldown-menu-button>
+
+        <div slot="popularLinks">
+          Popular Pages:
+          <span style="text-decoration:underline;color:#145A7B;">Beneficiaries</span><span>&nbsp; ,&nbsp;
+          </span><span style="text-decoration:underline;color:#145A7B;">Getting Your Money</span><span>&nbsp;
+            ,&nbsp;
+          </span><span style="text-decoration:underline;color:#145A7B;">Forgot PIN</span><span>&nbsp; ,&nbsp;
+          </span><span style="text-decoration:underline;color:#145A7B;">Get Investment Advice</span>
+        </div>
+      </v-drilldown-menu-page>
+
+      <v-drilldown-menu-page breadcrumbText="My Retirement Accounts" from="main" id="retirement-accounts" level="1"
+        title="My Retirement Accounts" blockTitleTranslation blockBreadcrumbTranslation>
+        <v-drilldown-menu-button (click)="withinApp()">
+          My Employer 401k Account (In App Browser)
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button>
+          Employer Savings Account
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button>
+          YRC Savings Account
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button>
+          Non Qualified Savings Plan
+        </v-drilldown-menu-button>
+        <v-drilldown-menu-button (click)="tabedBalance()">
+         Balances
+        </v-drilldown-menu-button>
+      </v-drilldown-menu-page>
+
+      <v-drilldown-menu-page breadcrumbText="Main Menu" from="main" id="financial-wellness" level="1"
+        title="Financial Wellness">
+        <v-drilldown-menu-link href="/">
+          My Resource Center
+        </v-drilldown-menu-link>
+        <v-drilldown-menu-link href="/">
+          Financial Wellness Assessment
+        </v-drilldown-menu-link>
+        <v-drilldown-menu-link href="/">
+          Life Stage Guidance
+        </v-drilldown-menu-link>
+        <v-drilldown-menu-link href="/">
+          Calculators & Tools
+        </v-drilldown-menu-link>
+        <v-drilldown-menu-link href="/">
+          Personal Finance Management
+        </v-drilldown-menu-link>
+      </v-drilldown-menu-page>
+    </v-drilldown-menu>
+
+    <v-mobile-navigation-footer class="">
+      <v-icon linkButton name="commentdots"> Contact US </v-icon>
+      <v-icon linkButton name="globeamericas"> Ver en Español </v-icon>
+      <v-icon linkButton name="profile"> Sign Out </v-icon>
+    </v-mobile-navigation-footer>
+  </v-mobile-navigation-container>
+</div>
