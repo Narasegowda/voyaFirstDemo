@@ -1,0 +1,1744 @@
+{
+	"info": {
+		"_postman_id": "1dc84d87-0a3c-4b41-889b-3b9e03e30fdc",
+		"name": "Voya_EB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login-client_use_voyasso",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "mobile-ui",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"participantId\" : \"U005175126\",\n\n    \"useridtype\" : \"UNAME\",\n\n    \"pin\" : \"Password#1\",\n\n     \"amazonMarketApp\":false,\n       \"clientid\":null\n\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/mobile/login",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"ws",
+						"ers",
+						"public",
+						"mobile",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login-client_use_voyasso",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "mobile-ui",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"participantId\" : \"U005175126\",\n\n    \"useridtype\" : \"UNAME\",\n\n    \"pin\" : \"Password#1\",\n\n     \"amazonMarketApp\":false,\n      \"clientid\":null\n\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/mobile/login",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"voyasso",
+								"ws",
+								"ers",
+								"public",
+								"mobile",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 30 Apr 2021 07:14:24 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-vcap-request-id",
+							"value": "1704d424-5c1e-42b0-7760-db108cc32023"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"loginResponse\": {\n        \"authResult\": \"client_use_voyasso\",\n        \"domain\": \"stateofmi.intg.voya.com\",\n        \"clientId\": \"MICHIGAN\",\n        \"clientList\": [],\n        \"informationLine\": \"1-855-663-8692\",\n        \"timeoutInMin\": 0,\n        \"myvoyaDomain\": \"mobile-my.intg.voya.com\",\n        \"myvoyaLogoutUrl\": \"https://mobile-my.intg.voya.com/myvoya/logout\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login_SSN_ select_client",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "mobile-ui",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"participantId\" : \"123456789\",\n    \"useridtype\" : \"SSN\",\n    \"pin\" : \"895623\",\n     \"amazonMarketApp\":false,\n     \"clientid\":\"INDANA\"\n}\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/mobile/login",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"ws",
+						"ers",
+						"public",
+						"mobile",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login_SSN_ select_client",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "mobile-ui",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"participantId\" : \"123456789\",\n    \"useridtype\" : \"SSN\",\n    \"pin\" : \"895623\",\n     \"amazonMarketApp\":false,\n     \"clientid\":\"INDANA\"\n}\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/mobile/login",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"voyasso",
+								"ws",
+								"ers",
+								"public",
+								"mobile",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 30 Apr 2021 07:14:12 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-vcap-request-id",
+							"value": "940646c2-016b-4a71-4204-1b95ce88ddcd"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"loginResponse\": {\n        \"authResult\": \"client_use_voyasso\",\n        \"domain\": \"https://my3.intg.voya.com/voyasso/logon?domain=inprs.intg.voya.com\",\n        \"clientId\": \"INDANA\",\n        \"clientList\": [],\n        \"status\": \"part_not_converted\",\n        \"informationLine\": \"1-855-663-8692\",\n        \"timeoutInMin\": 0,\n        \"myvoyaDomain\": \"mobile-my.intg.voya.com\",\n        \"myvoyaLogoutUrl\": \"https://my3.intg.voya.com/myvoya/logout\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login_SSN_ select_client List",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "mobile-ui",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"participantId\" : \"123456789\",\n    \"useridtype\" : \"SSN\",\n    \"pin\" : \"895623\",\n         \"amazonMarketApp\":false\n}\n    \n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/mobile/login",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"ws",
+						"ers",
+						"public",
+						"mobile",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login_SSN_ select_client Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "mobile-ui",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"participantId\" : \"123456789\",\n    \"useridtype\" : \"SSN\",\n    \"pin\" : \"895623\",\n         \"amazonMarketApp\":false\n}\n    \n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/mobile/login",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"voyasso",
+								"ws",
+								"ers",
+								"public",
+								"mobile",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 30 Apr 2021 07:14:00 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-vcap-request-id",
+							"value": "b01b5222-1cab-46e0-79b2-bce31aec4ac8"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"loginResponse\": {\n        \"authResult\": \"select_client\",\n        \"clientList\": [\n            {\n                \"key\": \"INDANA\",\n                \"value\": \"Indiana Public Retirement\",\n                \"domain\": \"inprs.intg.voya.com\",\n                \"myvoyaEnabled\": true\n            },\n            {\n                \"key\": \"AAFES\",\n                \"domain\": \"aafesretirement.intg.mypenpay.com\",\n                \"myvoyaEnabled\": true\n            },\n            {\n                \"key\": \"SURSOI\",\n                \"value\": \"Retirement Plan\",\n                \"domain\": \"surs.intg.voya.com\",\n                \"myvoyaEnabled\": true\n            },\n            {\n                \"key\": \"NEVADA\",\n                \"value\": \"Retirement Plan\",\n                \"domain\": \"nevada.intg.voya.com\",\n                \"myvoyaEnabled\": true\n            },\n            {\n                \"key\": \"HEARST\",\n                \"value\": \"Hearst Corporation\",\n                \"domain\": \"hearstretirementsavings.intg.voya.com\",\n                \"myvoyaEnabled\": true\n            }\n        ],\n        \"informationLine\": \"1-855-663-8692\",\n        \"timeoutInMin\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "doInitVoyasso",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"appId\":\"PWEB\",\"domain\":\"stateofmi.intg.voya.com\",\"page\":\"\",\"sourceAppId\":\"\",\"target\":\"\",\"theme\":\"MOBILE\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/initSession",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"ws",
+						"ers",
+						"public",
+						"initSession"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "doInitVoyasso",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"appId\":\"PWEB\",\"domain\":\"stateofmi.intg.voya.com\",\"page\":\"\",\"sourceAppId\":\"\",\"target\":\"\",\"theme\":\"MOBILE\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/initSession",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"voyasso",
+								"ws",
+								"ers",
+								"public",
+								"initSession"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 11:26:44 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-vcap-request-id",
+							"value": "ad2cf3ae-209f-4e8f-5da4-8d52d84d6365"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "RSDOMAIN=stateofmi.intg.voya.com_MICHIGAN; Domain=.voya.com; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PD-S-I-MYMOBILE-SESSION-ID=0_TCsjRNOqytsinjMQ95ZGTT4H3Eg4OygCnPk3S+s92VtTJh2gXSs=_AAAAAQA=_5lt8gFGv6uQYdWcRKzywcgtMW/w=; Domain=.intg.voya.com; Path=/; Secure; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorCode\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "initMGP",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/mga/sps/ac/js/info.js",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"mga",
+						"sps",
+						"ac",
+						"js",
+						"info.js"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "initMGP",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/mga/sps/ac/js/info.js",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"mga",
+								"sps",
+								"ac",
+								"js",
+								"info.js"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "script",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-language",
+							"value": "en-US"
+						},
+						{
+							"key": "content-type",
+							"value": "text/javascript;charset=UTF-8"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 11:29:02 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "server",
+							"value": "IBM Security Access Manager"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache=\"set-cookie, set-cookie2\""
+						},
+						{
+							"key": "expires",
+							"value": "Thu, 01 Dec 1994 16:00:00 GMT"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": ""
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Accept,Connection,Content-Type,Host,iv-creds,iv-groups,iv-remote-address,iv-user,User-Agent,Via,iv-user-l,Cache-Control,x-custom-remote-addr,x-requested-by,x-forwarded-host,iv_server_name,postman-token,Cookie"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS, GET, POST, DELETE"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ac.uuid=\"\"; Max-Age=0; Domain=.intg.voya.com; Path=/; Expires=Sun, 01-Jan-1995 02:00:00 GMT; Secure"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PD-S-I-MYMOBILE-SESSION-ID=0_TCsjRNOqytsinjMQ95ZGTT4H3Eg4OygCnPk3S+s92VtTJh2gXSs=_AAAAAgA=_5lt8gFGv6uQYdWcRKzywcgtMW/w=; Domain=.intg.voya.com; Path=/; Secure; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "//set cookie name to array\r\n//var cookieName = \"ac.uuid\";\r\nvar cookieName = [\"ac.uuid\"];\r\nvar serviceLocation = \"/mga/sps/ac\";\r\n\r\nvar colorDepth = true; \nvar deviceLanguage = true; \nvar screenHeight = true; \nvar devicePlatform = true; \nvar browserPlugins = true; \nvar screenWidth = true; \nvar deviceFonts = true; \n\r\nvar baseUserAgent = true;\r\n\r\n\r\nvar lat = null;\r\nvar lon = null;\r\nvar userLocation;\r\nvar acc = null;\r\nvar alt = null;\r\nvar d = new Date();\r\nvar locationAvailable;\r\nvar correlationID = null;\r\nvar fontList = \"\";\r\nvar submitted = false;\r\n\r\n/*var commonFonts = [\r\n                \"Aharoni\", \"Andale Mono\", \"Andalus\", \"Angsana New\", \"AngsanaUPC\", \"Aparajita\", \"Arabic Typesetting\", \"Arial Black\", \"Arial\", \"Batang\", \"BatangChe\", \"Bitstream Charter\",\r\n                \"Bitstream Vera Sans Mono\", \"Bitstream Vera Sans\", \"Bitstream Vera Serif\", \"Browallia New\", \"BrowalliaUPC\", \"Calibri\", \"Cambria Math\", \"Cambria\", \"Candara\",\r\n                \"Century Schoolbook L\", \"Comic Sans MS\", \"Consolas\", \"Constantia\", \"Corbel\", \"Cordia New\", \"CordiaUPC\", \"Courier 10 Pitch\", \"Courier New\", \"DFKai-SB\",\r\n                \"DaunPenh\", \"David\", \"DejaVu Sans Mono\", \"DejaVu Sans\", \"DejaVu Serif\", \"DilleniaUPC\", \"Dingbats\",\r\n                \"DokChampa\", \"Dotum\", \"DotumChe\", \"Ebrima\", \"Estrangelo Edessa\", \"EucrosiaUPC\", \"Euphemia\", \"FangSong\", \"FrankRuehl\", \"Franklin Gothic Medium\", \"FreeMono\", \"FreeSans\",\r\n                \"FreeSerif\", \"FreesiaUPC\", \"Gabriola\", \"Garuda\", \"Gautami\", \"Gentium Basic\", \"Gentium Book Basic\", \"Gentium\", \"GentiumAlt\", \"Georgia\", \"Gisha\", \"Gulim\", \"GulimChe\",\r\n                \"Gungsuh\", \"GungsuhChe\", \"Impact\", \"IrisUPC\", \"Iskoola Pota\", \"JasmineUPC\", \"KacstOne\", \"KaiTi\", \"Kalinga\", \"Kartika\", \"Kedage\", \"Khmer OS System\", \"Khmer OS\",\r\n                \"Khmer UI\", \"Kinnari\", \"KodchiangUPC\", \"Kokila\", \"LMMathExtension10\", \"LMMathItalic10\", \"LMMathItalic12\", \"LMMathItalic5\", \"LMMathItalic6\", \"LMMathItalic7\",\r\n                \"LMMathItalic8\", \"LMMathItalic9\", \"LMMathSymbols10\", \"LMMathSymbols5\", \"LMMathSymbols6\", \"LMMathSymbols7\", \"LMMathSymbols8\", \"LMMathSymbols9\", \"LMMono10\", \"LMMono12\",\r\n                \"LMMono8\", \"LMMono9\", \"LMMonoCaps10\", \"LMMonoLt10\", \"LMMonoLtCond10\", \"LMMonoProp10\", \"LMMonoPropLt10\", \"LMMonoSlant10\", \"LMRoman10\", \"LMRoman12\", \"LMRoman17\",\r\n                \"LMRoman5\", \"LMRoman6\", \"LMRoman7\", \"LMRoman8\", \"LMRoman9\", \"LMRomanCaps10\", \"LMRomanDemi10\", \"LMRomanDunh10\", \"LMRomanSlant10\", \"LMRomanSlant12\", \"LMRomanSlant17\",\r\n                \"LMRomanSlant8\", \"LMRomanSlant9\", \"LMRomanUnsl10\", \"LMSans10\", \"LMSans12\", \"LMSans17\", \"LMSans8\", \"LMSans9\", \"LMSansDemiCond10\", \"LMSansQuot8\", \"Lao UI\", \"Latha\",\r\n                \"Leelawadee\", \"Levenim MT\", \"Liberation Mono\", \"Liberation Sans Narrow\", \"Liberation Sans\", \"Liberation Serif\", \"LilyUPC\", \"Lohit Bengali\", \"Lohit Gujarati\", \"Lohit Hindi\",\r\n                \"Lohit Punjabi\", \"Lohit Tamil\", \"Loma\", \"Lucida Bright\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"Lucida Sans Unicode\", \"Lucida Sans\", \"Luxi Mono\", \"Luxi Sans\",\r\n                \"Luxi Serif\", \"MS Gothic\", \"MS Mincho\", \"MS PGothic\", \"MS PMincho\", \"MS UI Gothic\", \"MV Boli\", \"Malgun Gothic\", \"Mallige\", \"Mangal\", \"Marlett\", \"Meera\", \"Meiryo UI\",\r\n                \"Meiryo\", \"Microsoft Himalaya\", \"Microsoft JhengHei\", \"Microsoft New Tai Lue\", \"Microsoft PhagsPa\", \"Microsoft Sans Serif\", \"Microsoft Tai Le\", \"Microsoft Uighur\",\r\n                \"Microsoft YaHei\", \"Microsoft Yi Baiti\", \"MingLiU\", \"MingLiU-ExtB\", \"MingLiU_HKSCS\", \"MingLiU_HKSCS-ExtB\", \"Miriam Fixed\", \"Miriam\", \"Mongolian Baiti\", \"MoolBoran\",\r\n                \"Mukti Narrow\", \"NSimSun\", \"Narkisim\", \"Nimbus Mono L\", \"Nimbus Roman No9 L\", \"Nimbus Sans L\", \"Norasi\", \"Nyala\", \"OpenSymbol\", \"PMingLiU\",\r\n                \"PMingLiU-ExtB\", \"Palatino Linotype\", \"Phetsarath OT\", \"Plantagenet Cherokee\", \"Pothana2000\", \"Purisa\", \"Raavi\", \"Rachana\", \"Rekha\", \"Rod\", \"Saab\", \"Sakkal Majalla\",\r\n                \"Sawasdee\", \"Segoe Print\", \"Segoe Script\", \"Segoe UI Light\", \"Segoe UI Semibold\", \"Segoe UI Symbol\", \"Segoe UI\", \"Shonar Bangla\", \"Shruti\", \"SimHei\", \"SimSun\",\r\n                \"SimSun-ExtB\", \"Simplified Arabic Fixed\", \"Simplified Arabic\", \"Standard Symbols L\", \"Sylfaen\", \"Symbol\", \"Tahoma\", \"TakaoPGothic\", \"Times New Roman\", \"Tlwg Typist\",\r\n                \"Tlwg Typo\", \"TlwgMono\", \"TlwgTypewriter\", \"Traditional Arabic\", \"Trebuchet MS\", \"Tunga\", \"URW Bookman L\", \"URW Chancery L\", \"URW Gothic L\", \"URW Palladio L\",\r\n                \"Ubuntu Condensed\", \"Ubuntu Mono\", \"Ubuntu\", \"Umpush\", \"UnBatang\", \"UnDotum\", \"Untitled\", \"Untitled1\", \"Utsaah\", \"Vani\", \"Vemana2000\", \"Verdana\",\r\n                \"Vijaya\", \"Vrinda\", \"Waree\", \"Webdings\", \"WenQuanYi Micro Hei Mono\", \"WenQuanYi Micro Hei\", \"Wingdings\", \"gargi\"\r\n        ]; */\r\nvar commonFonts = [\r\n    \"Abadi MT Condensed Light\",\r\n    \"Academy Engraved LET\",\r\n    \"ADOBE CASLON PRO\",\r\n    \"Adobe Garamond\",\r\n    \"ADOBE GARAMOND PRO\",\r\n    \"Agency FB\",\r\n    \"Aharoni\",\r\n    \"Albertus Extra Bold\",\r\n    \"Albertus Medium\",\r\n    \"Algerian\",\r\n    \"Amazone BT\",\r\n    \"American Typewriter\",\r\n    \"American Typewriter Condensed\",\r\n    \"AmerType Md BT\",\r\n    \"Andalus\",\r\n    \"Angsana New\",\r\n    \"AngsanaUPC\",\r\n    \"Antique Olive\",\r\n    \"Aparajita\",\r\n    \"Apple Chancery\",\r\n    \"Apple Color Emoji\",\r\n    \"Apple SD Gothic Neo\",\r\n    \"Arabic Typesetting\",\r\n    \"ARCHER\",\r\n    \"ARNO PRO\",\r\n    \"Arrus BT\",\r\n    \"Aurora Cn BT\",\r\n    \"AvantGarde Bk BT\",\r\n    \"AvantGarde Md BT\",\r\n    \"AVENIR\",\r\n    \"Ayuthaya\",\r\n    \"Bandy\",\r\n    \"Bangla Sangam MN\",\r\n    \"Bank Gothic\",\r\n    \"BankGothic Md BT\",\r\n    \"Baskerville\",\r\n    \"Baskerville Old Face\",\r\n    \"Batang\",\r\n    \"BatangChe\",\r\n    \"Bauer Bodoni\",\r\n    \"Bauhaus 93\",\r\n    \"Bazooka\",\r\n    \"Bell MT\",\r\n    \"Bembo\",\r\n    \"Benguiat Bk BT\",\r\n    \"Berlin Sans FB\",\r\n    \"Berlin Sans FB Demi\",\r\n    \"Bernard MT Condensed\",\r\n    \"BernhardFashion BT\",\r\n    \"BernhardMod BT\",\r\n    \"Big Caslon\",\r\n    \"BinnerD\",\r\n    \"Blackadder ITC\",\r\n    \"BlairMdITC TT\",\r\n    \"Bodoni 72\",\r\n    \"Bodoni 72 Oldstyle\",\r\n    \"Bodoni 72 Smallcaps\",\r\n    \"Bodoni MT\",\r\n    \"Bodoni MT Black\",\r\n    \"Bodoni MT Condensed\",\r\n    \"Bodoni MT Poster Compressed\",\r\n    \"Bookshelf Symbol 7\",\r\n    \"Boulder\",\r\n    \"Bradley Hand\",\r\n    \"Bradley Hand ITC\",\r\n    \"Bremen Bd BT\",\r\n    \"Britannic Bold\",\r\n    \"Broadway\",\r\n    \"Browallia New\",\r\n    \"BrowalliaUPC\",\r\n    \"Brush Script MT\",\r\n    \"Californian FB\",\r\n    \"Calisto MT\",\r\n    \"Calligrapher\",\r\n    \"Candara\",\r\n    \"CaslonOpnface BT\",\r\n    \"Castellar\",\r\n    \"Centaur\",\r\n    \"Cezanne\",\r\n    \"CG Omega\",\r\n    \"CG Times\",\r\n    \"Chalkboard\",\r\n    \"Chalkboard SE\",\r\n    \"Chalkduster\",\r\n    \"Charlesworth\",\r\n    \"Charter Bd BT\",\r\n    \"Charter BT\",\r\n    \"Chaucer\",\r\n    \"ChelthmITC Bk BT\",\r\n    \"Chiller\",\r\n    \"Clarendon\",\r\n    \"Clarendon Condensed\",\r\n    \"CloisterBlack BT\",\r\n    \"Cochin\",\r\n    \"Colonna MT\",\r\n    \"Constantia\",\r\n    \"Cooper Black\",\r\n    \"Copperplate\",\r\n    \"Copperplate Gothic\",\r\n    \"Copperplate Gothic Bold\",\r\n    \"Copperplate Gothic Light\",\r\n    \"CopperplGoth Bd BT\",\r\n    \"Corbel\",\r\n    \"Cordia New\",\r\n    \"CordiaUPC\",\r\n    \"Cornerstone\",\r\n    \"Coronet\",\r\n    \"Cuckoo\",\r\n    \"Curlz MT\",\r\n    \"DaunPenh\",\r\n    \"Dauphin\",\r\n    \"David\",\r\n    \"DB LCD Temp\",\r\n    \"DELICIOUS\",\r\n    \"Denmark\",\r\n    \"DFKai-SB\",\r\n    \"Didot\",\r\n    \"DilleniaUPC\",\r\n    \"DIN\",\r\n    \"DokChampa\",\r\n    \"Dotum\",\r\n    \"DotumChe\",\r\n    \"Ebrima\",\r\n    \"Edwardian Script ITC\",\r\n    \"Elephant\",\r\n    \"English 111 Vivace BT\",\r\n    \"Engravers MT\",\r\n    \"EngraversGothic BT\",\r\n    \"Eras Bold ITC\",\r\n    \"Eras Demi ITC\",\r\n    \"Eras Light ITC\",\r\n    \"Eras Medium ITC\",\r\n    \"EucrosiaUPC\",\r\n    \"Euphemia\",\r\n    \"Euphemia UCAS\",\r\n    \"EUROSTILE\",\r\n    \"Exotc350 Bd BT\",\r\n    \"FangSong\",\r\n    \"Felix Titling\",\r\n    \"Fixedsys\",\r\n    \"FONTIN\",\r\n    \"Footlight MT Light\",\r\n    \"Forte\",\r\n    \"FrankRuehl\",\r\n    \"Fransiscan\",\r\n    \"Freefrm721 Blk BT\",\r\n    \"FreesiaUPC\",\r\n    \"Freestyle Script\",\r\n    \"French Script MT\",\r\n    \"FrnkGothITC Bk BT\",\r\n    \"Fruitger\",\r\n    \"FRUTIGER\",\r\n    \"Futura\",\r\n    \"Futura Bk BT\",\r\n    \"Futura Lt BT\",\r\n    \"Futura Md BT\",\r\n    \"Futura ZBlk BT\",\r\n    \"FuturaBlack BT\",\r\n    \"Gabriola\",\r\n    \"Galliard BT\",\r\n    \"Gautami\",\r\n    \"Geeza Pro\",\r\n    \"Geometr231 BT\",\r\n    \"Geometr231 Hv BT\",\r\n    \"Geometr231 Lt BT\",\r\n    \"GeoSlab 703 Lt BT\",\r\n    \"GeoSlab 703 XBd BT\",\r\n    \"Gigi\",\r\n    \"Gill Sans\",\r\n    \"Gill Sans MT\",\r\n    \"Gill Sans MT Condensed\",\r\n    \"Gill Sans MT Ext Condensed Bold\",\r\n    \"Gill Sans Ultra Bold\",\r\n    \"Gill Sans Ultra Bold Condensed\",\r\n    \"Gisha\",\r\n    \"Gloucester MT Extra Condensed\",\r\n    \"GOTHAM\",\r\n    \"GOTHAM BOLD\",\r\n    \"Goudy Old Style\",\r\n    \"Goudy Stout\",\r\n    \"GoudyHandtooled BT\",\r\n    \"GoudyOLSt BT\",\r\n    \"Gujarati Sangam MN\",\r\n    \"Gulim\",\r\n    \"GulimChe\",\r\n    \"Gungsuh\",\r\n    \"GungsuhChe\",\r\n    \"Gurmukhi MN\",\r\n    \"Haettenschweiler\",\r\n    \"Harlow Solid Italic\",\r\n    \"Harrington\",\r\n    \"Heather\",\r\n    \"Heiti SC\",\r\n    \"Heiti TC\",\r\n    \"HELV\",\r\n    \"Herald\",\r\n    \"High Tower Text\",\r\n    \"Hiragino Kaku Gothic ProN\",\r\n    \"Hiragino Mincho ProN\",\r\n    \"Hoefler Text\",\r\n    \"Humanst 521 Cn BT\",\r\n    \"Humanst521 BT\",\r\n    \"Humanst521 Lt BT\",\r\n    \"Imprint MT Shadow\",\r\n    \"Incised901 Bd BT\",\r\n    \"Incised901 BT\",\r\n    \"Incised901 Lt BT\",\r\n    \"INCONSOLATA\",\r\n    \"Informal Roman\",\r\n    \"Informal011 BT\",\r\n    \"INTERSTATE\",\r\n    \"IrisUPC\",\r\n    \"Iskoola Pota\",\r\n    \"JasmineUPC\",\r\n    \"Jazz LET\",\r\n    \"Jenson\",\r\n    \"Jester\",\r\n    \"Jokerman\",\r\n    \"Juice ITC\",\r\n    \"Kabel Bk BT\",\r\n    \"Kabel Ult BT\",\r\n    \"Kailasa\",\r\n    \"KaiTi\",\r\n    \"Kalinga\",\r\n    \"Kannada Sangam MN\",\r\n    \"Kartika\",\r\n    \"Kaufmann Bd BT\",\r\n    \"Kaufmann BT\",\r\n    \"Khmer UI\",\r\n    \"KodchiangUPC\",\r\n    \"Kokila\",\r\n    \"Korinna BT\",\r\n    \"Kristen ITC\",\r\n    \"Krungthep\",\r\n    \"Kunstler Script\",\r\n    \"Lao UI\",\r\n    \"Latha\",\r\n    \"Leelawadee\",\r\n    \"Letter Gothic\",\r\n    \"Levenim MT\",\r\n    \"LilyUPC\",\r\n    \"Lithograph\",\r\n    \"Lithograph Light\",\r\n    \"Long Island\",\r\n    \"Lydian BT\",\r\n    \"Magneto\",\r\n    \"Maiandra GD\",\r\n    \"Malayalam Sangam MN\",\r\n    \"Malgun Gothic\",\r\n    \"Mangal\",\r\n    \"Marigold\",\r\n    \"Marion\",\r\n    \"Marker Felt\",\r\n    \"Market\",\r\n    \"Marlett\",\r\n    \"Matisse ITC\",\r\n    \"Matura MT Script Capitals\",\r\n    \"Meiryo\",\r\n    \"Meiryo UI\",\r\n    \"Microsoft Himalaya\",\r\n    \"Microsoft JhengHei\",\r\n    \"Microsoft New Tai Lue\",\r\n    \"Microsoft PhagsPa\",\r\n    \"Microsoft Tai Le\",\r\n    \"Microsoft Uighur\",\r\n    \"Microsoft YaHei\",\r\n    \"Microsoft Yi Baiti\",\r\n    \"MingLiU\",\r\n    \"MingLiU_HKSCS\",\r\n    \"MingLiU_HKSCS-ExtB\",\r\n    \"MingLiU-ExtB\",\r\n    \"Minion\",\r\n    \"Minion Pro\",\r\n    \"Miriam\",\r\n    \"Miriam Fixed\",\r\n    \"Mistral\",\r\n    \"Modern\",\r\n    \"Modern No. 20\",\r\n    \"Mona Lisa Solid ITC TT\",\r\n    \"Mongolian Baiti\",\r\n    \"MONO\",\r\n    \"MoolBoran\",\r\n    \"Mrs Eaves\",\r\n    \"MS LineDraw\",\r\n    \"MS Mincho\",\r\n    \"MS PMincho\",\r\n    \"MS Reference Specialty\",\r\n    \"MS UI Gothic\",\r\n    \"MT Extra\",\r\n    \"MUSEO\",\r\n    \"MV Boli\",\r\n    \"Nadeem\",\r\n    \"Narkisim\",\r\n    \"NEVIS\",\r\n    \"News Gothic\",\r\n    \"News GothicMT\",\r\n    \"NewsGoth BT\",\r\n    \"Niagara Engraved\",\r\n    \"Niagara Solid\",\r\n    \"Noteworthy\",\r\n    \"NSimSun\",\r\n    \"Nyala\",\r\n    \"OCR A Extended\",\r\n    \"Old Century\",\r\n    \"Old English Text MT\",\r\n    \"Onyx\",\r\n    \"Onyx BT\",\r\n    \"OPTIMA\",\r\n    \"Oriya Sangam MN\",\r\n    \"OSAKA\",\r\n    \"OzHandicraft BT\",\r\n    \"Palace Script MT\",\r\n    \"Papyrus\",\r\n    \"Parchment\",\r\n    \"Party LET\",\r\n    \"Pegasus\",\r\n    \"Perpetua\",\r\n    \"Perpetua Titling MT\",\r\n    \"PetitaBold\",\r\n    \"Pickwick\",\r\n    \"Plantagenet Cherokee\",\r\n    \"Playbill\",\r\n    \"PMingLiU\",\r\n    \"PMingLiU-ExtB\",\r\n    \"Poor Richard\",\r\n    \"Poster\",\r\n    \"PosterBodoni BT\",\r\n    \"PRINCETOWN LET\",\r\n    \"Pristina\",\r\n    \"PTBarnum BT\",\r\n    \"Pythagoras\",\r\n    \"Raavi\",\r\n    \"Rage Italic\",\r\n    \"Ravie\",\r\n    \"Ribbon131 Bd BT\",\r\n    \"Rockwell\",\r\n    \"Rockwell Condensed\",\r\n    \"Rockwell Extra Bold\",\r\n    \"Rod\",\r\n    \"Roman\",\r\n    \"Sakkal Majalla\",\r\n    \"Santa Fe LET\",\r\n    \"Savoye LET\",\r\n    \"Sceptre\",\r\n    \"Script\",\r\n    \"Script MT Bold\",\r\n    \"SCRIPTINA\",\r\n    \"Serifa\",\r\n    \"Serifa BT\",\r\n    \"Serifa Th BT\",\r\n    \"ShelleyVolante BT\",\r\n    \"Sherwood\",\r\n    \"Shonar Bangla\",\r\n    \"Showcard Gothic\",\r\n    \"Shruti\",\r\n    \"Signboard\",\r\n    \"SILKSCREEN\",\r\n    \"SimHei\",\r\n    \"Simplified Arabic\",\r\n    \"Simplified Arabic Fixed\",\r\n    \"SimSun\",\r\n    \"SimSun-ExtB\",\r\n    \"Sinhala Sangam MN\",\r\n    \"Sketch Rockwell\",\r\n    \"Skia\",\r\n    \"Small Fonts\",\r\n    \"Snap ITC\",\r\n    \"Snell Roundhand\",\r\n    \"Socket\",\r\n    \"Souvenir Lt BT\",\r\n    \"Staccato222 BT\",\r\n    \"Steamer\",\r\n    \"Stencil\",\r\n    \"Storybook\",\r\n    \"Styllo\",\r\n    \"Subway\",\r\n    \"Swis721 BlkEx BT\",\r\n    \"Swiss911 XCm BT\",\r\n    \"Sylfaen\",\r\n    \"Synchro LET\",\r\n    \"System\",\r\n    \"Tamil Sangam MN\",\r\n    \"Technical\",\r\n    \"Teletype\",\r\n    \"Telugu Sangam MN\",\r\n    \"Tempus Sans ITC\",\r\n    \"Terminal\",\r\n    \"Thonburi\",\r\n    \"Traditional Arabic\",\r\n    \"Trajan\",\r\n    \"TRAJAN PRO\",\r\n    \"Tristan\",\r\n    \"Tubular\",\r\n    \"Tunga\",\r\n    \"Tw Cen MT\",\r\n    \"Tw Cen MT Condensed\",\r\n    \"Tw Cen MT Condensed Extra Bold\",\r\n    \"TypoUpright BT\",\r\n    \"Unicorn\",\r\n    \"Univers\",\r\n    \"Univers CE 55 Medium\",\r\n    \"Univers Condensed\",\r\n    \"Utsaah\",\r\n    \"Vagabond\",\r\n    \"Vani\",\r\n    \"Vijaya\",\r\n    \"Viner Hand ITC\",\r\n    \"VisualUI\",\r\n    \"Vivaldi\",\r\n    \"Vladimir Script\",\r\n    \"Vrinda\",\r\n    \"Westminster\",\r\n    \"WHITNEY\",\r\n    \"Wide Latin\",\r\n    \"ZapfEllipt BT\",\r\n    \"ZapfHumnst BT\",\r\n    \"ZapfHumnst Dm BT\",\r\n    \"Zapfino\",\r\n    \"Zurich BlkEx BT\",\r\n    \"Zurich Ex BT\",\r\n    \"ZWAdobeF\",\r\n    \"Andale Mono\",\r\n    \"Arial Black\",\r\n    \"Arial\",\r\n    \"Bitstream Charter\",\r\n    \"Bitstream Vera Sans Mono\",\r\n    \"Bitstream Vera Sans\",\r\n    \"Bitstream Vera Serif\",\r\n    \"Calibri\",\r\n    \"Cambria Math\",\r\n    \"Cambria\",\r\n    \"Century Schoolbook L\",\r\n    \"Comic Sans MS\",\r\n    \"Consolas\",\r\n    \"Courier 10 Pitch\",\r\n    \"Courier New\",\r\n    \"DejaVu Sans Mono\",\r\n    \"DejaVu Sans\",\r\n    \"DejaVu Serif\",\r\n    \"Dingbats\",\r\n    \"Estrangelo Edessa\",\r\n    \"Franklin Gothic Medium\",\r\n    \"FreeMono\",\r\n    \"FreeSans\",\r\n    \"FreeSerif\",\r\n    \"Garuda\",\r\n    \"Gentium Basic\",\r\n    \"Gentium Book Basic\",\r\n    \"Gentium\",\r\n    \"GentiumAlt\",\r\n    \"Georgia\",\r\n    \"Impact\",\r\n    \"KacstOne\",\r\n    \"Kedage\",\r\n    \"Khmer OS System\",\r\n    \"Khmer OS\",\r\n    \"Kinnari\",\r\n    \"LMMathExtension10\",\r\n    \"LMMathItalic10\",\r\n    \"LMMathItalic12\",\r\n    \"LMMathItalic5\",\r\n    \"LMMathItalic6\",\r\n    \"LMMathItalic7\",\r\n    \"LMMathItalic8\",\r\n    \"LMMathItalic9\",\r\n    \"LMMathSymbols10\",\r\n    \"LMMathSymbols5\",\r\n    \"LMMathSymbols6\",\r\n    \"LMMathSymbols7\",\r\n    \"LMMathSymbols8\",\r\n    \"LMMathSymbols9\",\r\n    \"LMMono10\",\r\n    \"LMMono12\",\r\n    \"LMMono8\",\r\n    \"LMMono9\",\r\n    \"LMMonoCaps10\",\r\n    \"LMMonoLt10\",\r\n    \"LMMonoLtCond10\",\r\n    \"LMMonoProp10\",\r\n    \"LMMonoPropLt10\",\r\n    \"LMMonoSlant10\",\r\n    \"LMRoman10\",\r\n    \"LMRoman12\",\r\n    \"LMRoman17\",\r\n    \"LMRoman5\",\r\n    \"LMRoman6\",\r\n    \"LMRoman7\",\r\n    \"LMRoman8\",\r\n    \"LMRoman9\",\r\n    \"LMRomanCaps10\",\r\n    \"LMRomanDemi10\",\r\n    \"LMRomanDunh10\",\r\n    \"LMRomanSlant10\",\r\n    \"LMRomanSlant12\",\r\n    \"LMRomanSlant17\",\r\n    \"LMRomanSlant8\",\r\n    \"LMRomanSlant9\",\r\n    \"LMRomanUnsl10\",\r\n    \"LMSans10\",\r\n    \"LMSans12\",\r\n    \"LMSans17\",\r\n    \"LMSans8\",\r\n    \"LMSans9\",\r\n    \"LMSansDemiCond10\",\r\n    \"LMSansQuot8\",\r\n    \"Liberation Mono\",\r\n    \"Liberation Sans Narrow\",\r\n    \"Liberation Sans\",\r\n    \"Liberation Serif\",\r\n    \"Lohit Bengali\",\r\n    \"Lohit Gujarati\",\r\n    \"Lohit Hindi\",\r\n    \"Lohit Punjabi\",\r\n    \"Lohit Tamil\",\r\n    \"Loma\",\r\n    \"Lucida Bright\",\r\n    \"Lucida Console\",\r\n    \"Lucida Sans Typewriter\",\r\n    \"Lucida Sans Unicode\",\r\n    \"Lucida Sans\",\r\n    \"Luxi Mono\",\r\n    \"Luxi Sans\",\r\n    \"Luxi Serif\",\r\n    \"MS Gothic\",\r\n    \"MS PGothic\",\r\n    \"Mallige\",\r\n    \"Meera\",\r\n    \"Microsoft Sans Serif\",\r\n    \"Mukti Narrow\",\r\n    \"Nimbus Mono L\",\r\n    \"Nimbus Roman No9 L\",\r\n    \"Nimbus Sans L\",\r\n    \"Norasi\",\r\n    \"OpenSymbol\",\r\n    \"Palatino Linotype\",\r\n    \"Phetsarath OT\",\r\n    \"Pothana2000\",\r\n    \"Purisa\",\r\n    \"Rachana\",\r\n    \"Rekha\",\r\n    \"Saab\",\r\n    \"Sawasdee\",\r\n    \"Segoe Print\",\r\n    \"Segoe Script\",\r\n    \"Segoe UI Light\",\r\n    \"Segoe UI Semibold\",\r\n    \"Segoe UI Symbol\",\r\n    \"Segoe UI\",\r\n    \"Standard Symbols L\",\r\n    \"Symbol\",\r\n    \"Tahoma\",\r\n    \"TakaoPGothic\",\r\n    \"Times New Roman\",\r\n    \"Tlwg Typist\",\r\n    \"Tlwg Typo\",\r\n    \"TlwgMono\",\r\n    \"TlwgTypewriter\",\r\n    \"Trebuchet MS\",\r\n    \"URW Bookman L\",\r\n    \"URW Chancery L\",\r\n    \"URW Gothic L\",\r\n    \"URW Palladio L\",\r\n    \"Ubuntu Condensed\",\r\n    \"Ubuntu Mono\",\r\n    \"Ubuntu\",\r\n    \"Umpush\",\r\n    \"UnBatang\",\r\n    \"UnDotum\",\r\n    \"Untitled\",\r\n    \"Untitled1\",\r\n    \"Vemana2000\",\r\n    \"Verdana\",\r\n    \"Waree\",\r\n    \"Webdings\",\r\n    \"WenQuanYi Micro Hei Mono\",\r\n    \"WenQuanYi Micro Hei\",\r\n    \"Wingdings\",\r\n    \"gargi\"\r\n];\r\n\r\n\r\nif(typeof geoLongitude != \"undefined\" || typeof geoLocation != \"undefined\") {\r\n    getLocation();\r\n}\r\nwindow.onload = function() {\r\n    if((typeof deviceFonts != \"undefined\") && deviceFonts) {\r\n        getFonts();\r\n    }\r\n    sendSession(0);\r\n}\r\n\r\n/**\r\n * Detects the location of the device from which the requests are made.\r\n * If the location information is sent to the server, call the getLocation() function before the sendSession() function.\r\n * The following web browsers support the detection of location: Mozilla Firefox, Google Chrome, Opera, Apple Safari, and Microsoft Internet Explorer 9.\r\n */\r\nfunction getLocation() {\r\n    if(navigator.geolocation) {\r\n            locationAvailable = true;\r\n        navigator.geolocation.getCurrentPosition(showLocation, showError, {enableHighAccuracy:true,maximumAge:600000,timeout:5000});\r\n    } else {\r\n        locationAvailable = false;\r\n    }\r\n}\r\n\r\nfunction showError(error) {\r\n    locationAvailable = false;\r\n}\r\n\r\nfunction showLocation(position) {\r\n    lat = position.coords.latitude;\r\n    lon = position.coords.longitude;\r\n    acc = position.coords.accuracy;\r\n    alt = position.coords.altitude;\r\n}\r\n\r\nfunction getCorrelationID(c_name) {\r\n    var correlationID = \"\";\r\n        var i,x,y,ARRcookies=document.cookie.split(\";\");\r\n        for (i=0;i<ARRcookies.length;i++) {\r\n                x=ARRcookies[i].substr(0,ARRcookies[i].indexOf(\"=\"));\r\n                y=ARRcookies[i].substr(ARRcookies[i].indexOf(\"=\")+1);\r\n                x=x.replace(/^\\s+|\\s+$/g,\"\");\r\n                for (j=0;j<c_name.length;j++){\r\n                  if (x==c_name[j]) {\r\n                          correlationID = y;\r\n                  }\r\n                }\r\n        }\r\n    //return correlationID;\r\n    return \"\";\r\n}\r\n\r\nfunction populateFontList(fontArr) {\r\n    var allFontsCounter = 0;\r\n    fontList=\"\";\r\n    for (var key in fontArr)\r\n    {\r\n        var fontName = fontArr[key];\r\n        fontName = fontName.replace(/^\\s\\s*/, '').replace(/\\s\\s*$/, '');\r\n        fontList += fontName + \", \";\r\n    }\r\n    if (fontList.length >= 2) {\r\n        fontList = fontList.substring(0, fontList.length - 2);\r\n    }\r\n}\r\nvar ajaxRequest;\r\n\r\n/**\r\n * Makes a POST request to the delegate service.\r\n * The sendSession() function collects the web browser attributes and sends them to the server for storing in the database.\r\n * Call this function with the integer value \"0\" when a user logs in.\r\n */\r\nfunction sendSession(timesCalled) {\r\n    if(timesCalled <= 10 && lon == null && locationAvailable && (typeof geoLongitude != \"undefined\" || typeof geoLocation != null)) {\r\n        setTimeout(function() {sendSession(timesCalled + 1)}, 1000);\r\n    } else {\r\n        if(!submitted){\r\n\r\n            submitted = true;\r\n\r\n             //get real screen size for mobile devices, and accomodate rotation\r\n            var scrRatio = window.devicePixelRatio || 1;\r\n            var scrHeight;\r\n            var scrWidth;\r\n            var scrAvailHeight;\r\n            var scrAvailWidth;\r\n            //always keep things in landscape, in case device is rotated.\r\n            if (screen.height > screen.width){\r\n            \tscrHeight = screen.width * scrRatio;\r\n            \tscrWidth = screen.height * scrRatio;\r\n            \tscrAvailHeight = screen.availWidth * scrRatio;\r\n            \tscrAvailWidth = screen.availHeight * scrRatio;\r\n            }\r\n            else{\r\n            \tscrHeight = screen.height * scrRatio;\r\n            \tscrWidth = screen.width * scrRatio;\r\n            \tscrAvailHeight = screen.availHeight * scrRatio;\r\n            \tscrAvailWidth = screen.availWidth * scrRatio;\r\n            }\r\n\r\n            var jsonObj = {};\r\n\r\n            jsonObj['timestamp'] = new Date().getTime();\r\n\r\n            if(typeof pageId != \"undefined\") {\r\n                            jsonObj['pageId'] = pageId;\r\n                    }\r\n\r\n            if((typeof screenHeight != \"undefined\") && screenHeight) {\r\n                jsonObj['screenHeight'] = String(scrHeight);\r\n            }\r\n            if((typeof screenWidth != \"undefined\") && screenWidth) {\r\n                jsonObj['screenWidth'] = String(scrWidth);\r\n            }\r\n            if((typeof screenAvailableHeight != \"undefined\") && screenAvailableHeight) {\r\n                jsonObj['screenAvailableHeight'] = String(scrAvailHeight);\r\n            }\r\n            if((typeof screenAvailableWidth != \"undefined\") && screenAvailableWidth) {\r\n                jsonObj['screenAvailableWidth'] = String(scrAvailWidth);\r\n            }\r\n            if((typeof colorDepth != \"undefined\") && colorDepth) {\r\n                jsonObj['colorDepth'] = String(screen.colorDepth);\r\n            }\r\n            if((typeof deviceLanguage != \"undefined\") && deviceLanguage) {\r\n                if(navigator.userAgent.toString().indexOf(\"MSIE\") > -1) {\r\n                    jsonObj['deviceLanguage'] = String(navigator.systemLanguage);\r\n                } else {\r\n                    jsonObj['deviceLanguage'] = String(navigator.language);\r\n                }\r\n            }\r\n            if((typeof browserPlugins != \"undefined\") && browserPlugins) {\r\n                var pluginStr = \"\";\r\n                //collect IE plugins differently\r\n               \tif(window.ActiveXObject){\r\n\t\t\t        var plugNames = [\r\n\t\t\t          \"AcroPDF.PDF\", // Adobe PDF reader 7+\r\n\t\t\t          \"Adodb.Stream\",\r\n\t\t\t          \"AgControl.AgControl\", // Silverlight\r\n\t\t\t          \"DevalVRXCtrl.DevalVRXCtrl.1\",\r\n\t\t\t          \"MacromediaFlashPaper.MacromediaFlashPaper\",\r\n\t\t\t          \"Msxml2.DOMDocument\",\r\n\t\t\t          \"Msxml2.XMLHTTP\",\r\n\t\t\t          \"PDF.PdfCtrl\", // Adobe PDF reader 6 and earlier, brrr\r\n\t\t\t          \"QuickTime.QuickTime\", // QuickTime\r\n\t\t\t          \"QuickTimeCheckObject.QuickTimeCheck.1\",\r\n\t\t\t          \"RealPlayer\",\r\n\t\t\t          \"RealPlayer.RealPlayer(tm) ActiveX Control (32-bit)\",\r\n\t\t\t          \"RealVideo.RealVideo(tm) ActiveX Control (32-bit)\",\r\n\t\t\t          \"Scripting.Dictionary\",\r\n\t\t\t          \"SWCtl.SWCtl\", // ShockWave player\r\n\t\t\t          \"Shell.UIHelper\",\r\n\t\t\t          \"ShockwaveFlash.ShockwaveFlash\", //flash plugin\r\n\t\t\t          \"Skype.Detection\",\r\n\t\t\t          \"TDCCtl.TDCCtl\",\r\n\t\t\t          \"WMPlayer.OCX\", // Windows media player\r\n\t\t\t          \"rmocx.RealPlayer G2 Control\",\r\n\t\t\t          \"rmocx.RealPlayer G2 Control.1\"\r\n\t\t\t          ];\r\n                    for (var i =0; i< plugNames.length; i++){\r\n                        try{\r\n                            new ActiveXObject(plugNames[i]); // eslint-disable-no-new\r\n                            pluginStr += plugNames[i] + \",\"\r\n                        } catch(e){\r\n                            return null;\r\n                        }\r\n                    }\r\n\t\t\t    }\r\n\t\t\t    else{\r\n\t                for(var i = 0; i < navigator.plugins.length; i++) {\r\n\t                    if(i > 0) {\r\n\t                        pluginStr += \",\";\r\n\t                    }\r\n\r\n\r\n\t                    pluginStr += navigator.plugins[i].name;\r\n\t                }\r\n\t            }\r\n                    if (pluginStr.length == 0){\r\n                        pluginStr = \"no plugins\";\r\n                    }\r\n                    jsonObj['browserPlugins'] = String(pluginStr);\r\n            }\r\n            if((typeof devicePlatform != \"undefined\") && devicePlatform) {\r\n                jsonObj['devicePlatform'] = String(navigator.platform);\r\n            }\r\n            if((typeof geoLatitude != \"undefined\") && geoLatitude) {\r\n                jsonObj['geoLatitude'] = String(lat);\r\n            }\r\n            if((typeof geoLongitude != \"undefined\") && geoLongitude) {\r\n                jsonObj['geoLongitude'] = String(lon);\r\n            }\r\n            if((typeof geoLocationAccuracy != \"undefined\") && geoLocationAccuracy) {\r\n                jsonObj['geoLocationAccuracy'] = String(acc);\r\n            }\r\n            if((typeof geoLocation != \"undefined\") && geoLocation) {\r\n                jsonObj['geoLocation'] = String(lat) + \",\" + String(lon) + \",\" + String(acc);\r\n            }\r\n            if((typeof deviceFonts != \"undefined\")&& deviceFonts){\r\n                jsonObj['deviceFonts'] = fontList;\r\n            }\r\n            if((typeof baseUserAgent != \"undefined\")&& baseUserAgent){\r\n                jsonObj['baseUserAgent'] = String(navigator.userAgent).replace(/\\d|\\W/g, \"\");\r\n            }\r\n\r\n            if(window.XMLHttpRequest) {\r\n                ajaxRequest = new XMLHttpRequest();\r\n            } else  {\r\n                ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\r\n            }\r\n            ajaxRequest.open(\"POST\", serviceLocation + \"/\" + getCorrelationID(cookieName));\r\n            ajaxRequest.onreadystatechange  = handleAjaxResponse;\r\n            ajaxRequest.setRequestHeader('Content-Type', 'application/json');\r\n            try{\r\n                ajaxRequest.withCredentials = true;\r\n            }catch(e){\r\n                //IE version does not support this property. eating up exception\r\n            }\r\n            ajaxRequest.send(JSON.stringify(jsonObj));\r\n\r\n        }\r\n    }\r\n}\r\n\r\n/**\r\n * Makes a DELETE request for a specified correlation ID.\r\n * The POST request from the sendSession() returns a correlation ID.\r\n * Based on the correlation ID, the deleteSession() function deletes the attributes from the database.\r\n * Call this function when the user logs out or when the current session times out.\r\n */\r\nfunction deleteSession() {\r\n    if(window.XMLHttpRequest) {\r\n        ajaxRequest = new XMLHttpRequest();\r\n    } else  {\r\n        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\r\n    }\r\n        ajaxRequest.open(\"DELETE\", serviceLocation + \"/\" + getCorrelationID(cookieName), true);\r\n    ajaxRequest.onreadystatechange = handleServerResponse;\r\n    try{\r\n        ajaxRequest.withCredentials = true;\r\n    }catch(e){\r\n        //IE version does not support this property. eating up exception\r\n    }\r\n    ajaxRequest.send(null);\r\n}\r\n\r\nvar getRequest;\r\n\r\nfunction getSession() {\r\n    if(window.XMLHttpRequest) {\r\n        getRequest = new XMLHttpRequest();\r\n    } else  {\r\n        getRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\r\n    }\r\n    try{\r\n        ajaxRequest.withCredentials = true;\r\n    }catch(e){\r\n        //IE version does not support this property. eating up exception\r\n    }\r\n        getRequest.open(\"GET\", serviceLocation + \"/\" + getCorrelationID(cookieName), true);\r\n        getRequest.onreadystatechange = handleInitialResponse;\r\n        //getRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');\r\n        getRequest.send(null);\r\n}\r\n\r\nfunction handleServerResponse() {\r\n   if (ajaxRequest.readyState == 4) {\r\n     if(ajaxRequest.status == 200) {\r\n//       document.write(\"<p>\" + ajaxRequest.responseText + \"</p>\"); //Update the HTML Form element\r\n     }\r\n     else {\r\n        alert(\"Error during AJAX call. Please try again\");\r\n     }\r\n   }\r\n}\r\n\r\nfunction handleAjaxResponse() {\r\n    if(ajaxRequest.readyState == 4) {\r\n        if(ajaxRequest.status == 200) {\r\n            if(ajaxRequest.responseText.length > 0) {\r\n                generateCookie(ajaxRequest.responseText);\r\n                if (typeof(onWebsealDeviceFingerprintSuccess) === 'function') {\r\n                    onWebsealDeviceFingerprintSuccess(ajaxRequest);\r\n                }\r\n            }\r\n        }\r\n        else {\r\n            //alert(\"Error during AJAX call\");\r\n            if (typeof(onWebsealDeviceFingerprintFailure) === 'function') {\r\n                onWebsealDeviceFingerprintFailure(ajaxRequest);\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nfunction handleInitialResponse() {\r\n   if (getRequest.readyState == 4) {\r\n     if(getRequest.status == 200) {\r\n       //document.write(\"<p>\" + ajaxRequest.responseText + \"</p>\"); //Update the HTML Form element\r\n     }\r\n     else {\r\n       //alert(\"Error during AJAX call. Please try again\");\r\n     }\r\n   }\r\n}\r\n\r\nfunction generateCookie(cookieValue) {\r\n    if(window.location.protocol == \"https:\") {\r\n        //document.cookie=cookieName + \"=\" + cookieValue + \";Domain=\" + window.location.hostname.substring(window.location.hostname.indexOf(\".\")) +\";path=/;secure\";\r\n    } else {\r\n        //document.cookie=cookieName + \"=\" + cookieValue + \";Domain=\" + window.location.hostname.substring(window.location.hostname.indexOf(\".\")) + \";path=/\";\r\n    }\r\n}\r\n\r\nfunction cookieExists() {\r\n    var cookieList = document.cookie.split(';');\r\n    for(var i = 0; i < cookieList.length; i++) {\r\n        if(cookieList[i].indexOf(cookieName) > -1) {\r\n            return true;\r\n        }\r\n    }\r\n    return false;\r\n}\r\n\r\nfunction getFonts() {\r\n    var div = document.createElement('div');\r\n        div.innerHTML = \"The quick brown fox jumps over the lazy dog\";\r\n        div.style.cssFloat = \"left\"; //div width will take up entire screen unless you float it.... this one works on everything but IE\r\n        div.style.styleFloat = \"left\";  //this is the property that works on IE\r\n        div.style.fontFamily = \"sans-serif\";\r\n        div.style.height = \"auto\";\r\n        div.style.width = \"auto\";\r\n        div.style.visibility = \"hidden\";\r\n\r\n    document.body.appendChild(div);\r\n        var defaultWidth = div.offsetWidth;  //get the height and width of the default font\r\n        var defaultHeight = div.offsetHeight;\r\n\r\n    for(var i = 0; i < commonFonts.length; i++) {\r\n        div.style.fontFamily = commonFonts[i] + \", sans-serif\";\r\n        var currentHeight = div.offsetHeight;\r\n        var currentWidth = div.offsetWidth;\r\n        if(div.offsetHeight != defaultHeight || div.offsetWidth != defaultWidth) {\r\n            if(fontList == \"\") {\r\n                fontList += commonFonts[i];\r\n            } else {\r\n                fontList += \",\" + commonFonts[i];\r\n            }\r\n        } else {\r\n            div.style.fontFamily = \"'\" + commonFonts[i] + \"', serif\";\r\n            currentHeight = div.offsetHeight;\r\n            currentWidth = div.offsetWidth;\r\n            if(div.offsetHeight == defaultHeight && div.offsetWidth == defaultWidth) { //if it's still the same size, then it used the named font,\r\n                if(fontList == \"\") {                                               //instead of the default\r\n                    fontList += commonFonts[i];\r\n                } else {\r\n                    fontList += \",\" + commonFonts[i];\r\n                }\r\n            }\r\n        }\r\n    }\r\n    document.body.removeChild(div);\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "MGPAttriCol",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"timestamp\": 1620297071, \"screenHeight\": 2701, \"screenWidth\": 1440, \"colorDepth\": \"24\", \"deviceLanguage\": \"en-US\", \"browserPlugins\": \"none\", \"devicePlatform\": \"android\", \"deviceFonts\": \"088d8d1db1407514\", \"baseUserAgent\": \"Dalvik/2.1.0 (Linux; U; Android 11; sdk_gphone_x86_arm Build/RSR1.201013.001) Titanium/9.3.2\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/mga/sps/ac",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"mga",
+						"sps",
+						"ac"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "MGPAttriCol",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"timestamp\": 1620297071, \"screenHeight\": 2701, \"screenWidth\": 1440, \"colorDepth\": \"24\", \"deviceLanguage\": \"en-US\", \"browserPlugins\": \"none\", \"devicePlatform\": \"android\", \"deviceFonts\": \"088d8d1db1407514\", \"baseUserAgent\": \"Dalvik/2.1.0 (Linux; U; Android 11; sdk_gphone_x86_arm Build/RSR1.201013.001) Titanium/9.3.2\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/mga/sps/ac",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"mga",
+								"sps",
+								"ac"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-language",
+							"value": "en-US"
+						},
+						{
+							"key": "content-type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 10:43:17 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": ""
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Accept,Connection,Content-Length,Content-Type,Host,iv-creds,iv-groups,iv-remote-address,iv-user,User-Agent,Via,iv-user-l,Cache-Control,x-custom-remote-addr,x-requested-by,x-forwarded-host,iv_server_name,postman-token,Cookie"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS, GET, POST, DELETE"
+						}
+					],
+					"cookie": [],
+					"body": "5f889158-695d-450d-b56b-9573b21e01f1"
+				}
+			]
+		},
+		{
+			"name": "doginPrepExec",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pageData\": {\n      \"pageId\": \"loginPrepare\"\n    },\n    \"formData\": {\n      \"emailOrUsername\": \"U005175126\",\n      \"password\": \"Password#1\"\n    }\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/loginPrepare/execute",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"ws",
+						"ers",
+						"public",
+						"loginPrepare",
+						"execute"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "doginPrepExec",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pageData\": {\n      \"pageId\": \"loginPrepare\"\n    },\n    \"formData\": {\n      \"emailOrUsername\": \"U005175126\",\n      \"password\": \"Password#1\"\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/public/loginPrepare/execute",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"voyasso",
+								"ws",
+								"ers",
+								"public",
+								"loginPrepare",
+								"execute"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 10:45:02 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-vcap-request-id",
+							"value": "390f1255-1b82-44b3-692e-ce1698f8f78e"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"clientAction\": \"redirect\",\n    \"pageData\": {\n        \"pageId\": \"login\",\n        \"services\": {\n            \"submit\": {\n                \"method\": \"POST\",\n                \"url\": \"authenticate\"\n            }\n        },\n        \"gaData\": {\n            \"sessionId\": \"937796FB1ADB5CFA672762F8B146D264\",\n            \"userId\": \"4deec03c-89b6-5a1d-e053-2cd8ac0a14bd\",\n            \"ssoPurpose\": \"MYVOYA\"\n        },\n        \"fields\": {},\n        \"sessionInfo\": {\n            \"appId\": \"MyVoya\",\n            \"qdro\": false,\n            \"eoi\": false\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "makeAuthenticateCall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/authenticate",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "makeAuthenticateCall",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/voyasso/authenticate",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"voyasso",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-language",
+							"value": "en-US"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 10:46:36 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "server",
+							"value": "IBM Security Access Manager"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PD-S-I-MYMOBILE-SESSION-ID=1_aQrvDbYSAwaeacU35hcXkTk1UxNg9X3hp22z+tbSd3KT0SYCsWs=_AAAAAAA=_Vw6hZCjz7KDOLCfVCS2z0v/q6G4=; Domain=.intg.voya.com; Path=/; Secure; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mechanism\": \"urn:ibm:security:authentication:asf:mechanism:macotp\",\n    \"stateId\": \"iPRIINHnRln29Sgb9XXnHtt64Qz7K0XQBSQ9Q8RGCqNN9YxUlYJoRMUtWzYuQqAbnzPKJPsIJ3be5agzJGRsvLismxTIpXMSw3uj9rz1TthPQbGf8bNAu5P2UHHrCZi6\",\n    \"location\": \"/mga/sps/apiauthsvc?StateId=iPRIINHnRln29Sgb9XXnHtt64Qz7K0XQBSQ9Q8RGCqNN9YxUlYJoRMUtWzYuQqAbnzPKJPsIJ3be5agzJGRsvLismxTIpXMSw3uj9rz1TthPQbGf8bNAu5P2UHHrCZi6\",\n    \"otp.user.otp-hint\": \"7157\",\n    \"otp.user.sentTo\": \"th...@voya.com\",\n    \"mappingRuleData\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "submitOTPCall",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"otp.user.otp\":\"111111\",\"otp.user.otp-hint\":\"2532\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/mga/sps/apiauthsvc?StateId=UziHpVBXX1OUbpwc3FfYHsRF7PtrW3XhbJ9AkPWfvTyl5LTxOG8KqC8QRhaMOXrGXH9OH2dK9xr6KhMmHGuJsRUpadnRh3cCObT8H2XuNe8i8cUl1Jvl4zMvSxZNdFDa",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"mga",
+						"sps",
+						"apiauthsvc"
+					],
+					"query": [
+						{
+							"key": "StateId",
+							"value": "UziHpVBXX1OUbpwc3FfYHsRF7PtrW3XhbJ9AkPWfvTyl5LTxOG8KqC8QRhaMOXrGXH9OH2dK9xr6KhMmHGuJsRUpadnRh3cCObT8H2XuNe8i8cUl1Jvl4zMvSxZNdFDa"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "submitOTPCall",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							},
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer C57M09",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"otp.user.otp\":\"111111\",\"otp.user.otp-hint\":\"2532\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/mga/sps/apiauthsvc?StateId=HcwK90ow9f3xRd6V8wlOC4Y3CT7Kbt1jOyEwIgdUNSK9wchd4bdO0flWAdKrlcfJwCNpwbHGL4LsivTF53rWOg7anLRAdryMazzdOSFpEJVjSsvLsCth3U1YxW39UZlA",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"mga",
+								"sps",
+								"apiauthsvc"
+							],
+							"query": [
+								{
+									"key": "StateId",
+									"value": "HcwK90ow9f3xRd6V8wlOC4Y3CT7Kbt1jOyEwIgdUNSK9wchd4bdO0flWAdKrlcfJwCNpwbHGL4LsivTF53rWOg7anLRAdryMazzdOSFpEJVjSsvLsCth3U1YxW39UZlA"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-language",
+							"value": "en-US"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 11:56:37 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PD-S-I-MYMOBILE-SESSION-ID=1_Y0xTlM2TeGot21daAgIteaAUAQW0WwkHkaugf1qpkphnUQQ3vFE=_AAAAAQA=_KA8XE3wc5VsWCG+Stu3TlX59YEM=; Domain=.intg.voya.com; Path=/; Secure; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exceptionMsg\": \"\",\n    \"location\": \"/mga/sps/apiauthsvc?StateId=JlCYD4n3gvR3xonbiDnB7Micyj0cmsJx5pnYs0ReU2wiSXGpAPro9mydNIk7uZWc9bKvDksCM9XIzGt7eaGaOC0q613tZNQ656NpO5YuGTkXalT8N7XH8C3sZLlS8j1O\",\n    \"state\": \"JlCYD4n3gvR3xonbiDnB7Micyj0cmsJx5pnYs0ReU2wiSXGpAPro9mydNIk7uZWc9bKvDksCM9XIzGt7eaGaOC0q613tZNQ656NpO5YuGTkXalT8N7XH8C3sZLlS8j1O\",\n    \"message\": \"\",\n    \"mechanism\": \"urn:ibm:security:authentication:asf:mechanism:consent_register_device\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Submit from Registration Screen",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					},
+					{
+						"key": "Bearer",
+						"value": "C57M09",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"operation\":\"consent\",\"Txtdevice\":\"088d8d1db1407514\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/mga/sps/apiauthsvc?StateId=JlCYD4n3gvR3xonbiDnB7Micyj0cmsJx5pnYs0ReU2wiSXGpAPro9mydNIk7uZWc9bKvDksCM9XIzGt7eaGaOC0q613tZNQ656NpO5YuGTkXalT8N7XH8C3sZLlS8j1O",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"mga",
+						"sps",
+						"apiauthsvc"
+					],
+					"query": [
+						{
+							"key": "StateId",
+							"value": "JlCYD4n3gvR3xonbiDnB7Micyj0cmsJx5pnYs0ReU2wiSXGpAPro9mydNIk7uZWc9bKvDksCM9XIzGt7eaGaOC0q613tZNQ656NpO5YuGTkXalT8N7XH8C3sZLlS8j1O"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registration no submit",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							},
+							{
+								"key": "Bearer",
+								"value": "C57M09",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"operation\":\"consent\",\"Txtdevice\":\"088d8d1db1407514\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/mga/sps/apiauthsvc?StateId=4hg1ZEIWDVojlWLU19wZzkvcdEe782nhwLgszkaQZEetzBoxKSm8qwlN110fA6l8ZGCM5T3VXvYCWXRzNZobtcCmHh7NyO9TEyPQOoFKRDgZI6Z6wUA6x7lSzaNYdJoE",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"mga",
+								"sps",
+								"apiauthsvc"
+							],
+							"query": [
+								{
+									"key": "StateId",
+									"value": "4hg1ZEIWDVojlWLU19wZzkvcdEe782nhwLgszkaQZEetzBoxKSm8qwlN110fA6l8ZGCM5T3VXvYCWXRzNZobtcCmHh7NyO9TEyPQOoFKRDgZI6Z6wUA6x7lSzaNYdJoE"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-language",
+							"value": "en-US"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 14:47:23 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "expires",
+							"value": "Thu, 01 Dec 1994 16:00:00 GMT"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PD-S-I-MYMOBILE-SESSION-ID=0_Di0bzHpwnrZa7/nqSvJMfDZeIPf4aqt1083cfbHeomQRFqjXIEU=_AAAAAQA=_Dh0hZB4v/KJ3DxI508TujOhrAHg=; Domain=.intg.voya.com; Path=/; Secure; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exceptionMsg\": \"FBTAUT017E Authentication service received an invalid state ID [f8sq2H1toLDRnCwZ4i5viLUAbuve0kBBY6iCqdhf241TzywPtvP50JE00OODXnKlK35qrwrJxrDnYYjMLbc42QIFOvma7axg5H4Z6C8iR1KIYe4XOVHIuNfl34irPrzl].\",\n    \"state\": \"\",\n    \"message\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "registration YES submit",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					},
+					{
+						"key": "Bearer",
+						"value": "C57M09",
+						"type": "text"
+					},
+					{
+						"key": "rememberme",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"deviceType\":\"android\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/voyasso/ws/ers/sso/users/deviceRegistrationAlert",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"voyasso",
+						"ws",
+						"ers",
+						"sso",
+						"users",
+						"deviceRegistrationAlert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customURL/Summary Call",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true,
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-by",
+						"value": "VOYASSO-UI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-my.intg.voya.com/eportal/mobile/preauth.action?s=Y6iNVhClDAKeFHJJvSmrTx35.i9397&emailAddress=test%40gmail.com&d=c57dc6e9ebca0951d4973cd55947b6b3a562da9f",
+					"protocol": "https",
+					"host": [
+						"mobile-my",
+						"intg",
+						"voya",
+						"com"
+					],
+					"path": [
+						"eportal",
+						"mobile",
+						"preauth.action"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "Y6iNVhClDAKeFHJJvSmrTx35.i9397"
+						},
+						{
+							"key": "emailAddress",
+							"value": "test%40gmail.com"
+						},
+						{
+							"key": "d",
+							"value": "c57dc6e9ebca0951d4973cd55947b6b3a562da9f"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customURL/Summary Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-by",
+								"value": "VOYASSO-UI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mobile-my.intg.voya.com/eportal/mobile/preauth.action?s=Y6iNVhClDAKeFHJJvSmrTx35.i9397&emailAddress=test%40gmail.com&d=c57dc6e9ebca0951d4973cd55947b6b3a562da9f",
+							"protocol": "https",
+							"host": [
+								"mobile-my",
+								"intg",
+								"voya",
+								"com"
+							],
+							"path": [
+								"eportal",
+								"mobile",
+								"preauth.action"
+							],
+							"query": [
+								{
+									"key": "s",
+									"value": "Y6iNVhClDAKeFHJJvSmrTx35.i9397"
+								},
+								{
+									"key": "emailAddress",
+									"value": "test%40gmail.com"
+								},
+								{
+									"key": "d",
+									"value": "c57dc6e9ebca0951d4973cd55947b6b3a562da9f"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-language",
+							"value": "en-US"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 May 2021 14:49:03 GMT"
+						},
+						{
+							"key": "p3p",
+							"value": "CP=\"NON CUR OTPi OUR NOR UNI\""
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache,no-store,max-age=0"
+						},
+						{
+							"key": "expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+						},
+						{
+							"key": "authorizationeportaljsessionid",
+							"value": "B0393127914FDC8CE97C58F7EE11B98A.CFXX"
+						},
+						{
+							"key": "x-vcap-request-id",
+							"value": "c4408712-a0bf-4298-6a68-eca8edef1216"
+						},
+						{
+							"key": "x-ahc",
+							"value": "771a7f8196503c877a04b4329c80c6a8"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "pragma",
+							"value": "No-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jsessionid=B0393127914FDC8CE97C58F7EE11B98A.CFXX; Path=/eportal; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csahcn=771a7f8196503c877a04b4329c80c6a8; Domain=.voya.com; Path=/; Secure; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandHeaderType\": \"I\",\n    \"challengeResult\": null,\n    \"edeliveryFlag\": false,\n    \"employerName\": \"Retirement Plan\",\n    \"forcePage\": \"home\",\n    \"grandTotal\": 430000,\n    \"homePageMsg\": \"\",\n    \"loginResponse\": {\n        \"authMessage\": null,\n        \"authResult\": \"login_sucess\",\n        \"clientId\": \"ACHSTR\",\n        \"clientList\": [],\n        \"cssessionId\": \"Y6iNVhClDAKeFHJJvSmrTx35.i9397\",\n        \"deviceRegistered\": null,\n        \"domain\": null,\n        \"informationLine\": null,\n        \"myvoyaDomain\": null,\n        \"myvoyaLogoutUrl\": null,\n        \"personId\": \"8957363G\",\n        \"status\": null,\n        \"timeoutInMin\": 30\n    },\n    \"orangemoneytoken\": null,\n    \"partName\": \"Arthur Ewald-Dp\",\n    \"planBeanList\": [\n        {\n            \"asOfDate\": \"MAY 5, 2021\",\n            \"balance\": \"$425,796.61\",\n            \"enrollBtnDisplay\": \"Y\",\n            \"mpStatus\": \"4\",\n            \"nqPlanSSOUrl\": null,\n            \"planId\": \"641051\",\n            \"planName\": \"ACH Food Companies, Inc. Thrift Plan\",\n            \"planType\": \"SAVINGS\"\n        },\n        {\n            \"asOfDate\": \"MAY 6, 2021\",\n            \"balance\": \"$192,229.08\",\n            \"enrollBtnDisplay\": null,\n            \"mpStatus\": null,\n            \"nqPlanSSOUrl\": \"https://mobile-my.intg.voya.com/esamloutbound/saml?ssn=SoBAFuLaYx5p2mQUIeiMpw%3D%3D&planId=641054&typeofUser=participant&target=pencal&t=1620312543335&d=cd09ea34b4afb3c93838e989657c07c2760dcc08\",\n            \"planId\": \"641054\",\n            \"planName\": \"ACH Food Companies, Inc. Supplemental Thrift Plan\",\n            \"planType\": \"NQPLAN\"\n        }\n    ],\n    \"restrictedTrader\": false,\n    \"showOrangeMoney\": \"false\"\n}"
+				}
+			]
+		}
+	]
+}
